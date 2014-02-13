@@ -318,22 +318,31 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
       % We insert the pages heres and adjust spacing and geometry
         \singlespace
         \UTPAtitlepage
+        \addtocounter{page}{-1}
         \insertblankpage
         \Committeepage
+        \addtocounter{page}{-1}
         \insertblankpage
         \Copyrightpage
+        \addtocounter{page}{-1}
         \insertblankpage
         \abstractpage
+        \addtocounter{page}{-1}
         \insertblankpage
         \dedicationpage
+        \addtocounter{page}{-1}
         \insertblankpage
         \acknowledgmentspage
+        \addtocounter{page}{-1}
         \insertblankpage
         \tableofcontents
+        \addtocounter{page}{-1}
         \insertblankpage
         \listoftables
+        \addtocounter{page}{-1}
         \insertblankpage
         \listoffigures
+        \addtocounter{page}{-1}
         \insertblankpage
         \restoregeometry
         \doublespace
