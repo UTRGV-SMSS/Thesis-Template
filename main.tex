@@ -1,0 +1,120 @@
+\documentclass[masters,draft]{UTPAthesis}
+%\documentclass[masters,final]{UTPAthesis}
+\usepackage{blindtext}
+
+%\usepackage{showkeys}
+
+% Your name
+\Author{John Q. Citizen}
+\Major{Mathematics}
+
+
+% this is your graduation date
+\Year{2014}
+\Month{May}
+
+% If you have a long title, split it between multiple lines using the \\ command
+ \Title{Titles Should Not Exceed
+   Six Inches on One Line\\ and In The
+   Inverted Pyramid Format\\ When Additional Lines Are Needed}
+
+% Your research advisor and his title
+ \Advisor{Dr. Charles Xavier }
+ \AdvisorTitle{Chair of Committee}
+
+% The text of your abstract
+ \Abstract{The abstract is double spaced, including the heading, which begins
+two inches down from the top of the page. Note that the abstract title is
+underlined and that any italicized words are not underlined (in order to
+indicate italics).  If an abstract title contains scientific terminology
+requiring italics, such terminology should be treated in the same manner. Do
+not use italic print in the abstract title.  Right and left margins are the
+same as for the body of the thesis. Note that the author's name and thesis
+title must be identical on the title page, the approval page, and the
+abstract heading. The date of graduation is the same as that shown on the
+title page. The number of titles is the number of items in the bibliography
+or reference list. Word limits are 150 for master's theses and 350 for
+doctoral dissertations. Count numbers as words, hyphenated words as two
+words. Acronyms, abbreviations, and initials as words. }
+
+
+\Dedication{%
+    [Dedication should be simple, in good taste, and fit on one page]
+    \blindtext
+  }
+
+% Acknowledge those who helped and supported you
+  \Acknowledgments{%
+    [Acknowledgements should be simple, in good taste, and fit on one page]
+    \blindtext
+  }
+
+%% The members of your committee
+ \MemberA{Dr. Stan Lee}
+ \MemberB{Dr. Henry McCoy}
+ \MemberC{}
+ \MemberD{}
+
+ \newcommand\stupid[1]{%
+        \vbox{%
+                \hsize=4.5in
+                \parindent=0pt
+                \leftskip=0pt plus.5fil
+                \rightskip=0pt plus-0.5fil
+                \parfillskip=0pt plus1fil
+                \emergencystretch=1in
+                \parshape6
+                0.00in 4.50in
+                0.25in 4.00in
+                0.50in 3.50in
+                0.75in 3.00in
+                1.00in 2.50in
+                1.25in 2.00in
+                %\huge
+                %\bfseries
+                \strut
+                #1%
+        }%
+        \par
+}
+
+
+
+\begin{document}
+
+ % Start page counting in roman numerals
+ \frontmatter
+
+ % This command makes the formal preliminary pages.
+ % You can comment it out during the drafting process if you want to save paper.
+ \makepreliminarypages
+
+
+ % Start regular page counting at page 1
+ \mainmatter
+
+
+% OK. Everything is set up. Type your thesis here.
+\chapter{Blah}
+\blindtext[5]
+\section{blah blah}
+\blindtext
+\subsection{blah blah blah}
+\blindtext
+\input{introduction.tex}
+\chapter{Blah some more}
+\blindtext
+\begin{equation}\label{eq:einstein}
+	e = mc^{2}
+\end{equation}
+
+
+% Make the bibliography.
+% Enter your references in the BibTex file "references.bib"
+\bibliographystyle{siam}
+\bibliography{references}
+
+% Make the index
+ % \printindex
+
+\end{document}
