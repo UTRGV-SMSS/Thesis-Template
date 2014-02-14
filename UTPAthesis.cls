@@ -444,3 +444,13 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
 {-\baselineskip}%            % the before skip
 {0.5\baselineskip}%          % the after skip
 {\normalfont\normalsize\scshape}} % the style
+
+
+% The following fixes the prefix for appendices in TOC
+\makeatletter
+\g@addto@macro\appendix{%
+  \addtocontents{toc}{%
+    \protect\renewcommand{\protect\cftchappresnum}{\appendixname\space}%
+  }%
+}
+\makeatother
