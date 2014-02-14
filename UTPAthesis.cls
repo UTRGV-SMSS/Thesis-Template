@@ -317,6 +317,16 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue,backref=true]{hyp
         \thispagestyle{fancy}
     }
 
+ %Redefine the List of Tables to deal with some blank page
+ %and bookmarking issues
+    \let\TEMPlistoftables\listoftables
+    \renewcommand{\listoftables}{%
+      \providecommand\phantomsection{} \phantomsection
+      \addcontentsline{toc}{chapter}{List of Tables}
+      \TEMPlistoftables
+        \thispagestyle{fancy}
+    }
+
  %Redefine the Bibliography to deal with a bookmarking issues
     \let\TEMPbibliography\bibliography
     \renewcommand{\bibliography}{%
