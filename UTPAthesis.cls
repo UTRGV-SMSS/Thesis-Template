@@ -396,7 +396,7 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
 \renewcommand{\cftchappagefont}{\normalfont}
 \renewcommand{\cftchapleader}{\cftdotfill{2.6}} % Add Table of Contents dots
 \renewcommand{\cftchappresnum}{Chapter~} % add the word "chapter" to toc entreis
-\AtBeginDocument{\addtolength\cftchapnumwidth{\widthof{\scshape Chapter}}}
+\AtBeginDocument{\addtolength\cftchapnumwidth{\widthof{\scshape Chapter~}}}
 
 \renewcommand{\contentsname}{Table of Contents}
 
