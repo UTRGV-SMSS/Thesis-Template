@@ -279,16 +279,7 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
 
 % Set the margins to UTPA specifications
 
-    \setlength{\marginparwidth}{0pt}
-    \setlength{\marginparsep}{0pt}
-    \setlength{\oddsidemargin}{0in}
-    \setlength{\evensidemargin}{0in}
-    \setlength{\textwidth}{6.5in}
-    \setlength{\topmargin}{0in}
-    \setlength{\headheight}{0.2in}
-    \setlength{\headsep}{0.3in}
-    \setlength{\textheight}{8.4in}
-   \setlength{\footskip}{0.25in}
+\geometry{top=1in, bottom=1in, left=1in, right=1in}
    \setlength{\parindent}{0.5in}
     \raggedbottom
 
