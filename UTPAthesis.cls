@@ -24,7 +24,7 @@
 % To include a link in your pdf use \href{URL}{Text to be displayed}.  If your
 % display text is the URL, you probably should use the \url{} command
 \usepackage[bookmarksnumbered,pdfpagelabels=true,plainpages=false,
-colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue,backref=true]{hyperref}
 % show labels during draft
 \usepackage{showkeys}
 
