@@ -189,6 +189,7 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
         \UTPAField@Dedication
       }
         \par\renewcommand{\baselinestretch}{1} \small\normalsize%
+        \restoregeometry
         }
 
 
@@ -208,6 +209,7 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
       }
 
         \par\renewcommand{\baselinestretch}{1} \small\normalsize%
+        \restoregeometry
         }
 
     \newcommand{\acknowledgmentspage}{%
@@ -225,6 +227,7 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
         \doublespace
         \UTPAField@Acknowledgments\par
       }
+        \restoregeometry
         }
 
         \newcommand{\insertblankpage}{%
