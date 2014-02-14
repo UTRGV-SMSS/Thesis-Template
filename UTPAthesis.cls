@@ -53,6 +53,7 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
     \newcommand{\Abstract}[1]{\gdef\UTPAField@Abstract{#1}}
     \newcommand{\Dedication}[1]{\gdef\UTPAField@Dedication{#1}}
     \newcommand{\Acknowledgments}[1]{\gdef\UTPAField@Acknowledgments{#1}}
+    \newcommand{\BiographicalSketch}[1]{\gdef\UTPAField@BiographicalSketch{#1}}
     \newcommand{\Major}[1]{\gdef\UTPAField@Major{#1}}
 
 % Initialize the variables to their default values
@@ -190,6 +191,24 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
         \par\renewcommand{\baselinestretch}{1} \small\normalsize%
         }
 
+
+    \newcommand{\biographypage}{%
+        \newgeometry{top=2in, bottom=2in}
+        \thispagestyle{fancy}
+        \singlespace
+        {\centering
+        BIOGRAPHICAL SKETCH
+        \par}
+      \vspace{2\baselineskip}
+         \small\normalsize%
+        \addcontentsline{toc}{chapter}{Biographical Sketch}
+          \doublespace
+        {\setlength{\parindent}{0.5in}
+        \UTPAField@BiographicalSketch
+      }
+
+        \par\renewcommand{\baselinestretch}{1} \small\normalsize%
+        }
 
     \newcommand{\acknowledgmentspage}{%
         \newgeometry{top=2in, bottom=2in}
