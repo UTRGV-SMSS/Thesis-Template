@@ -1,3 +1,8 @@
+This file includes a LaTeX template that attempts to conform to the guidelines established by the UTPA's Graduate School office.
+
+
+The original author of this template is Guillermo Garza ggarzaz39@utpa.edu
+
 Warnings:
 Loading the fontenc, amssyb, and microtype package will cause typesetting to fail.
 
