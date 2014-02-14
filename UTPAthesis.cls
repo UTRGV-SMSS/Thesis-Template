@@ -320,6 +320,7 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue,backref=true]{hyp
  %Redefine the Bibliography to deal with a bookmarking issues
     \let\TEMPbibliography\bibliography
     \renewcommand{\bibliography}{%
+      \clearpage
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{Bibliography}
       \TEMPbibliography
