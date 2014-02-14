@@ -355,7 +355,6 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue,backref=true]{hyp
         \addtocounter{page}{-1}
         \insertblankpage
         \listoffigures
-        \addtocounter{page}{-1}
         \insertblankpage
         \restoregeometry
         \doublespace
