@@ -346,7 +346,6 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue,backref=true]{hyp
         \addtocounter{page}{-1}
         \insertblankpage
         \acknowledgmentspage
-        \addtocounter{page}{-1}
         \insertblankpage
         \tableofcontents
         \addtocounter{page}{-1}
