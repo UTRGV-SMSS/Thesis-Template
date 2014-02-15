@@ -305,6 +305,8 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue,backref=true]{hyp
       \addcontentsline{toc}{chapter}{Table of Contents}
       \TEMPtableofcontents
         \thispagestyle{fancy}
+        \addtocounter{page}{-1}
+        \insertblankpage
     }
 
  %Redefine the List of Figures to deal with some blank page
@@ -315,6 +317,8 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue,backref=true]{hyp
       \addcontentsline{toc}{chapter}{List of Figures}
       \TEMPlistoffigures
         \thispagestyle{fancy}
+        \addtocounter{page}{-1}
+        \insertblankpage
     }
 
  %Redefine the List of Tables to deal with some blank page
@@ -325,6 +329,8 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue,backref=true]{hyp
       \addcontentsline{toc}{chapter}{List of Tables}
       \TEMPlistoftables
         \thispagestyle{fancy}
+        \addtocounter{page}{-1}
+        \insertblankpage
     }
 
  %Redefine the Bibliography to deal with a bookmarking issues
@@ -357,14 +363,6 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue,backref=true]{hyp
         \addtocounter{page}{-1}
         \insertblankpage
         \acknowledgmentspage
-        \insertblankpage
-        \tableofcontents
-        \addtocounter{page}{-1}
-        \insertblankpage
-        \listoftables
-        \addtocounter{page}{-1}
-        \insertblankpage
-        \listoffigures
         \insertblankpage
         \restoregeometry
         \doublespace
