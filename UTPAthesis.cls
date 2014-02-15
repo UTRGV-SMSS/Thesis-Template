@@ -303,7 +303,9 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue,backref=true]{hyp
       \renewcommand{\contentsname}{Table of Contents}
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{Table of Contents}
+      \singlespace
       \TEMPtableofcontents
+      \doublespace
         \thispagestyle{fancy}
         \addtocounter{page}{-1}
         \insertblankpage
@@ -315,7 +317,9 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue,backref=true]{hyp
     \renewcommand{\listoffigures}{%
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{List of Figures}
+      \singlespace
       \TEMPlistoffigures
+      \doublespace
         \thispagestyle{fancy}
         \addtocounter{page}{-1}
         \insertblankpage
@@ -327,7 +331,9 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue,backref=true]{hyp
     \renewcommand{\listoftables}{%
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{List of Tables}
+      \singlespace
       \TEMPlistoftables
+      \doublespace
         \thispagestyle{fancy}
         \addtocounter{page}{-1}
         \insertblankpage
