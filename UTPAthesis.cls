@@ -418,39 +418,39 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue,backref=true]{hyp
 % add the word page to table of contents
 %\addtocontents{toc}{~\hfill{Page}\par}
 
-\renewcommand{\@makechapterhead}[1]{%
-{%
-        \vspace*{0.0in}  % add vertical space
-    \ifnum \c@secnumdepth >\m@ne
-        \centering\scshape \@chapapp\space \thechapter % Chapter number
-        \par\nobreak
-        \vskip 20\p@
-    \fi
-    \interlinepenalty\@M
-    \scshape #1\par                         % chapter title
-    \nobreak
-    \vskip 20\p@
-  }}
+%\renewcommand{\@makechapterhead}[1]{%
+%{%
+        %\vspace*{0.0in}  % add vertical space
+    %\ifnum \c@secnumdepth >\m@ne
+        %\centering\scshape \@chapapp\space \thechapter % Chapter number
+        %\par\nobreak
+        %\vskip 20\p@
+    %\fi
+    %\interlinepenalty\@M
+    %\scshape #1\par                         % chapter title
+    %\nobreak
+    %\vskip 20\p@
+  %}}
 
-\renewcommand{\@makeschapterhead}[1]{%
-  \vspace*{50\p@}%
-  {\parindent \z@ \raggedright
-    \normalfont
-    \interlinepenalty\@M
-    \centering \scshape #1\par                         % chapter title
-    \vspace{5pt}%                                 % add vertical space
-    \nobreak
-    \vskip 40\p@
-  }}
+%\renewcommand{\@makeschapterhead}[1]{%
+  %\vspace*{50\p@}%
+  %{\parindent \z@ \raggedright
+    %\normalfont
+    %\interlinepenalty\@M
+    %\centering \scshape #1\par                         % chapter title
+    %\vspace{5pt}%                                 % add vertical space
+    %\nobreak
+    %\vskip 40\p@
+  %}}
 
  %Redefining the \section command:
-\renewcommand{\section}{\@startsection
-{section}%                   % the name
-{1}%                         % the level
-{0mm}%                       % the indent
-{-\baselineskip}%            % the before skip
-{0.5\baselineskip}%          % the after skip
-{\normalfont\normalsize\scshape}} % the style
+%\renewcommand{\section}{\@startsection
+%{section}%                   % the name
+%{1}%                         % the level
+%{0mm}%                       % the indent
+%{-\baselineskip}%            % the before skip
+%{0.5\baselineskip}%          % the after skip
+%{\normalfont\normalsize\scshape}} % the style
 
 
 % The following fixes the prefix for appendices in TOC
@@ -461,3 +461,5 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue,backref=true]{hyp
   }%
 }
 \makeatother
+
+\usepackage[sc,center,tiny]{titlesec}
