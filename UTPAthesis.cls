@@ -17,7 +17,6 @@
 \usepackage{amsmath}  % for ams mathematical environments
 \usepackage[letterpaper]{geometry} % for fixing margins
 \usepackage[l2tabu, orthodox]{nag}  % for more warnings
-\usepackage{booktabs} % for better tables
 \usepackage{indentfirst}  % for indention of first paragraph
 \usepackage{graphicx} % Allow the inclusion of graphics
 
@@ -463,3 +462,4 @@ colorlinks=true, linkcolor=black,citecolor=black,urlcolor=blue,backref=true]{hyp
 \makeatother
 
 \usepackage[sc,center,tiny]{titlesec}
+\usepackage{booktabs} % for better tables
