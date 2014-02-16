@@ -100,7 +100,7 @@
         \vspace{\baselineskip}
         A Thesis \\
         by \\
-        {\uppercase \UTPAField@Author }\\[\baselineskip]
+        \UTPAField@UppercaseAuthor\\
         \vspace{3\baselineskip}
         \uppercase{Committee Members} \\
         \vfill
