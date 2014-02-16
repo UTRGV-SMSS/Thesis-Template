@@ -16,7 +16,6 @@
 
 \usepackage{amsmath}  % for ams mathematical environments
 \usepackage[letterpaper]{geometry} % for fixing margins
-\usepackage[l2tabu, orthodox]{nag}  % for more warnings
 \usepackage{indentfirst}  % for indention of first paragraph
 \usepackage{graphicx} % Allow the inclusion of graphics
 
