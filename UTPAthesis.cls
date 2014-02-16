@@ -94,11 +94,9 @@
         \singlespace
         \centering
         \providecommand\pdfbookmark[3][]{} \pdfbookmark[0]{Title Page}{bm:Title}
-        \parbox[t]{6in}{%
-            \renewcommand{\baselinestretch}{2} \small\normalsize
-            \centering{\uppercase \UTPAField@Title}\par
-            \renewcommand{\baselinestretch}{1} \small\normalsize
-            }\\[\baselineskip]\par
+        \doublespace
+            {\UTPAField@UppercaseTitle}\par
+        \singlespace
         \vspace{\baselineskip}
         A Thesis \\
         by \\
