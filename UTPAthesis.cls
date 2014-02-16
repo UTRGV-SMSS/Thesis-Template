@@ -374,7 +374,7 @@
 % The settings below produce a nice, well separated header.
 \usepackage{fancyhdr}
 \fancyhead{}
-%\renewcommand{\headrulewidth}{0}
+\renewcommand{\headrulewidth}{0pt}
   \pagestyle{fancy}
 
 % The caption package allows you to change the formatting of figure captions.
