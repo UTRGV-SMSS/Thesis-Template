@@ -66,7 +66,7 @@
         \UTPAField@UppercaseTitle
         \singlespace
         \vfill  % provides equal spacing
-        A Thesis
+        A Thesis \\
         \vspace{\baselineskip}
         by \\
         \vspace{\baselineskip}
