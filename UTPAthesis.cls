@@ -188,7 +188,6 @@
         {\setlength{\parindent}{0.5in}
         \UTPAField@Dedication
       }
-        \par\renewcommand{\baselinestretch}{1} \small\normalsize%
         \insertblankpage
         \restoregeometry
         }
