@@ -127,6 +127,8 @@
         \par
 
         \restoregeometry
+        \addtocounter{page}{-1}
+        \insertblankpage
       }
 
     \newcommand{\Copyrightpage}{%
@@ -344,8 +346,6 @@
         \singlespace
         \UTPAtitlepage
         \Committeepage
-        \addtocounter{page}{-1}
-        \insertblankpage
         \Copyrightpage
         \addtocounter{page}{-1}
         \insertblankpage
