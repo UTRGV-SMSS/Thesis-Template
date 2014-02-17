@@ -188,8 +188,8 @@
         {\setlength{\parindent}{0.5in}
         \UTPAField@Dedication
       }
-        \insertblankpage
         \restoregeometry
+        \insertblankpage
         }
 
 
