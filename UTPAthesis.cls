@@ -400,4 +400,5 @@
 }
 \makeatother
 
+% this package is used to style the chapter, section, and subsection headings
 \usepackage[sc,center,tiny]{titlesec}
