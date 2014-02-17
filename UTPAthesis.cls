@@ -19,9 +19,6 @@
 \usepackage{indentfirst}  % for indention of first paragraph
 \usepackage{graphicx} % Allow the inclusion of graphics
 
-% To include a link in your pdf use \href{URL}{Text to be displayed}.  If your
-% display text is the URL, you probably should use the \url{} command
-
 
 
 % Declare some variables to hold the text fields for the preliminary pages
@@ -158,9 +155,7 @@
         \UTPAField@Abstract\par
       }
 
-
         \vfill
-        %\addtolength{\parskip}{-\baselineskip}
 
         \restoregeometry
     }
@@ -235,10 +230,6 @@
     }
 
 
-% Allow opt-out on acknowledgments
-
-
-
 
     \DeclareOption{masters}{%
       \degree{\uppercase{Master of Science}}
@@ -251,8 +242,6 @@
       \docname{dissertation}
       \AdvisorTitle{Chair}
     }
-
-
 
 
 
@@ -277,6 +266,7 @@
 \geometry{top=1in, bottom=1in, left=1in, right=1in}
    \setlength{\parindent}{0.5in}
     \raggedbottom
+
 
 % Uncomment these to allow allow more liberal figure placement
     %\renewcommand{\topfraction}{0.9}
@@ -376,14 +366,6 @@
 \renewcommand{\headrulewidth}{0pt}
   \pagestyle{fancy}
 
-% The caption package allows you to change the formatting of figure captions.
-% The commands here change to the suggested caption format:
-% single spaced and a bold tag
-%\usepackage[margin=0.3in,labelsep=none]{caption}
- %\DeclareCaptionFormat{suggested}{\singlespace#1#2 #3\par\doublespace}
- %\captionsetup{format=suggested}
-
-
 
 
 %%%% tips from http://texblog.org/2011/09/09/10-ways-to-customize-tocloflot/
@@ -405,44 +387,6 @@
 \setlength{\cftbeforesecskip}{1ex}
 \setlength{\cftbeforesubsecskip}{1ex}
 
-
-
-% add the word page to table of contents
-%\addtocontents{toc}{~\hfill{Page}\par}
-
-%\renewcommand{\@makechapterhead}[1]{%
-%{%
-        %\vspace*{0.0in}  % add vertical space
-    %\ifnum \c@secnumdepth >\m@ne
-        %\centering\scshape \@chapapp\space \thechapter % Chapter number
-        %\par\nobreak
-        %\vskip 20\p@
-    %\fi
-    %\interlinepenalty\@M
-    %\scshape #1\par                         % chapter title
-    %\nobreak
-    %\vskip 20\p@
-  %}}
-
-%\renewcommand{\@makeschapterhead}[1]{%
-  %\vspace*{50\p@}%
-  %{\parindent \z@ \raggedright
-    %\normalfont
-    %\interlinepenalty\@M
-    %\centering \scshape #1\par                         % chapter title
-    %\vspace{5pt}%                                 % add vertical space
-    %\nobreak
-    %\vskip 40\p@
-  %}}
-
- %Redefining the \section command:
-%\renewcommand{\section}{\@startsection
-%{section}%                   % the name
-%{1}%                         % the level
-%{0mm}%                       % the indent
-%{-\baselineskip}%            % the before skip
-%{0.5\baselineskip}%          % the after skip
-%{\normalfont\normalsize\scshape}} % the style
 
 
 % The following fixes the prefix for appendices in TOC
