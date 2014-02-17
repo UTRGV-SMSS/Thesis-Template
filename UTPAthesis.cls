@@ -240,7 +240,7 @@
 
 
 % Allow opt-out on acknowledgments
-    \DeclareOption{noacknowlegments}{%
+    \DeclareOption{noacknowledgments}{%
       \renewcommand{\acknowledgmentspage}{}
     }
 
