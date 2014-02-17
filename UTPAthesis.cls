@@ -7,7 +7,9 @@
 % The following class options are available
 %
 %   masters   : Produces the masters thesis preliminary pages
+%   phd   : Produces the phd dissertation preliminary pages
 %   noacknowledgments : Removes the acknowledgments page
+%   nodedication: Removes the dedication page
 
 
 % These packages typeset the thesis with Times Roman font
