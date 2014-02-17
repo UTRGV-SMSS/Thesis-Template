@@ -166,6 +166,8 @@
         \vfill
 
         \restoregeometry
+        \addtocounter{page}{-1}
+        \insertblankpage
     }
 
 
@@ -350,8 +352,6 @@
         \Committeepage
         \Copyrightpage
         \abstractpage
-        \addtocounter{page}{-1}
-        \insertblankpage
         \dedicationpage
         \acknowledgmentspage
         \restoregeometry
