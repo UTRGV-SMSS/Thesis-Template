@@ -61,6 +61,7 @@
           \thispagestyle{empty}
           \mbox{}
         \addtocounter{page}{-1}
+          \newpage
         }
 
 % Define the preliminary page layouts using the variables
