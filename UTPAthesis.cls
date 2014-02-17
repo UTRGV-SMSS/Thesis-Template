@@ -303,6 +303,7 @@
       \TEMPtableofcontents
       \doublespace
         \thispagestyle{fancy}
+        \restoregeometry
         \insertblankpage
     }
 
@@ -316,6 +317,7 @@
       \TEMPlistoffigures
       \doublespace
         \thispagestyle{fancy}
+        \restoregeometry
         \insertblankpage
     }
 
@@ -329,6 +331,7 @@
       \TEMPlistoftables
       \doublespace
         \thispagestyle{fancy}
+        \restoregeometry
         \insertblankpage
     }
 
