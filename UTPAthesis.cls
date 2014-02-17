@@ -304,6 +304,7 @@
       \doublespace
         \thispagestyle{fancy}
         \insertblankpage
+      \addtocounter{page}{1}
     }
 
  %Redefine the List of Figures to deal with some blank page
