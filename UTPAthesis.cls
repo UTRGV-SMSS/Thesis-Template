@@ -84,6 +84,8 @@
         \par}
       \newpage
       \restoregeometry
+        \addtocounter{page}{-1}
+        \insertblankpage
       }
 
     \newcommand{\Committeepage}{%
@@ -341,8 +343,6 @@
       % We insert the pages heres and adjust spacing and geometry
         \singlespace
         \UTPAtitlepage
-        \addtocounter{page}{-1}
-        \insertblankpage
         \Committeepage
         \addtocounter{page}{-1}
         \insertblankpage
