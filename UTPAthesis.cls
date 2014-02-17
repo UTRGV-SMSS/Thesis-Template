@@ -144,6 +144,8 @@
 
 
         \restoregeometry
+        \addtocounter{page}{-1}
+        \insertblankpage
     }
 
     \newcommand{\abstractpage}{%
@@ -347,8 +349,6 @@
         \UTPAtitlepage
         \Committeepage
         \Copyrightpage
-        \addtocounter{page}{-1}
-        \insertblankpage
         \abstractpage
         \addtocounter{page}{-1}
         \insertblankpage
