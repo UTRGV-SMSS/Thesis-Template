@@ -55,6 +55,13 @@
     \AdvisorTitle{Chair of Committee}
 
 
+% define a command to insert a blank page
+        \newcommand{\insertblankpage}{%
+          \newpage
+          \thispagestyle{empty}
+          \mbox{}
+        }
+
 % Define the preliminary page layouts using the variables
 
     \newcommand{\UTPAtitlepage}{%
@@ -230,11 +237,6 @@
         \insertblankpage
         }
 
-        \newcommand{\insertblankpage}{%
-          \newpage
-          \thispagestyle{empty}
-          \mbox{}
-        }
 
 
 % Allow opt-out on acknowledgments
