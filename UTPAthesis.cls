@@ -50,7 +50,9 @@
 % Initialize the variables to their default values
 
     \Title{Titles Must Be in Mixed Case and May Not Exceed Six Inches}
-
+    \docname{thesis}
+    \degree{\uppercase{Master of Science}}
+    \AdvisorTitle{Chair of Committee}
 
 
 % Define the preliminary page layouts using the variables
