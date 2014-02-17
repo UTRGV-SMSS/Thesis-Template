@@ -90,7 +90,6 @@
         \vspace{4\baselineskip}  % skip 4 lines
         Major Subject: \UTPAField@Major
         \par}
-      \newpage
       \restoregeometry
         \insertblankpage
       }
