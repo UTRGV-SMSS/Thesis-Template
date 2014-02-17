@@ -60,6 +60,7 @@
           \newpage
           \thispagestyle{empty}
           \mbox{}
+        \addtocounter{page}{-1}
         }
 
 % Define the preliminary page layouts using the variables
@@ -91,7 +92,6 @@
         \par}
       \newpage
       \restoregeometry
-        \addtocounter{page}{-1}
         \insertblankpage
       }
 
@@ -134,7 +134,6 @@
         \par
 
         \restoregeometry
-        \addtocounter{page}{-1}
         \insertblankpage
       }
 
@@ -151,7 +150,6 @@
 
 
         \restoregeometry
-        \addtocounter{page}{-1}
         \insertblankpage
     }
 
@@ -173,7 +171,6 @@
         \vfill
 
         \restoregeometry
-        \addtocounter{page}{-1}
         \insertblankpage
     }
 
@@ -193,7 +190,6 @@
         \UTPAField@Dedication
       }
         \par\renewcommand{\baselinestretch}{1} \small\normalsize%
-        \addtocounter{page}{-1}
         \insertblankpage
         \restoregeometry
         }
@@ -308,7 +304,6 @@
       \TEMPtableofcontents
       \doublespace
         \thispagestyle{fancy}
-        \addtocounter{page}{-1}
         \insertblankpage
     }
 
@@ -322,7 +317,6 @@
       \TEMPlistoffigures
       \doublespace
         \thispagestyle{fancy}
-        \addtocounter{page}{-1}
         \insertblankpage
     }
 
@@ -336,7 +330,6 @@
       \TEMPlistoftables
       \doublespace
         \thispagestyle{fancy}
-        \addtocounter{page}{-1}
         \insertblankpage
     }
 
