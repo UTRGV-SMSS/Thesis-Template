@@ -3,33 +3,36 @@
 
 
 %% Load your packages below.
-%% Make hyperref and showkeys come last of your loaded packages, to give them a
-%% fighting chance of not being over-written, since they redefine many
-%% LaTeX commands
+%% Make hyperref and showkeys come at the end of your loaded packages
+%% to make sure they are not over-written.  They redefine many
+%% standard LaTeX commands
 \usepackage{booktabs} % for better tables
 \usepackage[colorlinks=false]{hyperref}  % for urls
 \usepackage{showkeys}  % shows labels during draft mode
 
 
-% Your name
+% Insert your name here
 \Author{John Q. Citizen}
 \Major{Mathematics}
 
 
-% this is your graduation date
+% Insert your graduation date here
 \Year{2014}
 \Month{May}
 
-% If you have a long title, split it between multiple lines using the \\ command
- \Title{Titles Should Not Exceed
-   Six Inches on One Line\\ and In The
-   Inverted Pyramid Format\\ When Additional Lines Are Needed}
 
-% Your research advisor and his title
+% Insert the title of your thesis here.
+% If you have a long title, split it between multiple lines using the \\ command
+ \Title{Titles Should Not Exceed Six Inches on One Line\\
+   and In The Inverted Pyramid Format\\
+   When Additional Lines Are Needed
+}
+
+
+% Insert your research advisor and his title here
  \Advisor{Dr. Leonhard Euler}
  \AdvisorTitle{Chair of Committee}
 
-% The text of your abstract
 
 %% Insert the members of your committee here
  \MemberA{Dr. Carl Friedrich Gauss}
@@ -38,6 +41,7 @@
  \MemberD{}
 
 
+% Insert the text of your abstract here
  \Abstract{The abstract is double spaced, including the heading, which begins
 two inches down from the top of the page. Note that the abstract title is
 underlined and that any italicized words are not underlined (in order to
@@ -53,15 +57,17 @@ doctoral dissertations. Count numbers as words, hyphenated words as two
 words. Acronyms, abbreviations, and initials as words. }
 
 
+% You can dedicate your paper here
 \Dedication{%
-    [Dedication should be simple, in good taste, and fit on one page]
+    Dedication should be simple, in good taste, and fit on one page.
   }
 
-% Acknowledge those who helped and supported you
+% Acknowledge those who helped and supported you here.
   \Acknowledgments{%
-    [Acknowledgements should be simple, in good taste, and fit on one page]
+    Acknowledgements should be simple, in good taste, and fit on one page.
   }
 
+% Insert your biographical sketch here.
   \BiographicalSketch{%
     A brief biographical sketch of the student is required as part of each thesis.
   }
@@ -69,36 +75,40 @@ words. Acronyms, abbreviations, and initials as words. }
 
 \begin{document}
 
- % Start page counting in roman numerals
+ % This starts page counting in Roman numerals
  \frontmatter
 
  % This command makes the formal preliminary pages.
  % You can comment it out during the drafting process if you want to save paper.
  \makepreliminarypages
 
+ % These insert a table of contents, list of tables, and list of figures.
  \tableofcontents
  \listoftables
  \listoffigures
 
- % Start regular page counting at page 1
+ % This starts regular page counting in Arabic numerals
  \mainmatter
 
 
-% OK. Everything is set up. Insert your thesis here.
+% OK. Everything is set up. Insert your thesis below.
+% It's a good idea to split your thesis up into different files and use
+% the \input command
 \input{introduction.tex}
+
 
 %  Uncomment the following line for appendixes
 %\appendix
 
 
-% Make the bibliography.
+% This makes the bibliography.
 % Enter your references in the BibTex file "references.bib"
-% You can find bibtex info from Google Scholar
+% You can find bibtex info from Google Scholar.
 \bibliographystyle{siam}
 \bibliography{references}
 
 
-% Insert your Biographical Sketch
+% This inserts your Biographical Sketch
 \biographypage
 
 \end{document}
