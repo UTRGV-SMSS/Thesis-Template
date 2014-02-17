@@ -219,6 +219,7 @@
         \UTPAField@Acknowledgments\par
       }
         \restoregeometry
+        \insertblankpage
         }
 
         \newcommand{\insertblankpage}{%
@@ -353,7 +354,6 @@
         \insertblankpage
         \dedicationpage
         \acknowledgmentspage
-        \insertblankpage
         \restoregeometry
         \doublespace
          \setlength{\parindent}{0.5in}
