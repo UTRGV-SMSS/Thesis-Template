@@ -244,6 +244,10 @@
       \renewcommand{\acknowledgmentspage}{}
     }
 
+% Allow opt-out on dedication
+    \DeclareOption{nodedication}{%
+      \renewcommand{\dedicationpage}{}
+    }
 
 
     \DeclareOption{masters}{%
