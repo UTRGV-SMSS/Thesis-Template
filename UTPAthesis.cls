@@ -401,4 +401,3 @@
 \makeatother
 
 \usepackage[sc,center,tiny]{titlesec}
-\usepackage{booktabs} % for better tables
