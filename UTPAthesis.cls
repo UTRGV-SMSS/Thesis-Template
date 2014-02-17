@@ -178,6 +178,8 @@
         \UTPAField@Dedication
       }
         \par\renewcommand{\baselinestretch}{1} \small\normalsize%
+        \addtocounter{page}{-1}
+        \insertblankpage
         \restoregeometry
         }
 
@@ -350,8 +352,6 @@
         \addtocounter{page}{-1}
         \insertblankpage
         \dedicationpage
-        \addtocounter{page}{-1}
-        \insertblankpage
         \acknowledgmentspage
         \insertblankpage
         \restoregeometry
