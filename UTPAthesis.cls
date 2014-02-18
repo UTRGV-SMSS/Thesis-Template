@@ -98,7 +98,7 @@
       }
 
     \newcommand{\Committeepage}{%
-        \newgeometry{top=2in, bottom=2in}
+        \newgeometry{top=2in, bottom=1in}
         \thispagestyle{empty}
         \singlespace
         \centering
@@ -140,7 +140,7 @@
       }
 
     \newcommand{\Copyrightpage}{%
-        \newgeometry{top=2in, bottom=2in}
+        \newgeometry{top=2in, bottom=1in}
         \thispagestyle{empty}
         \vspace*{\fill}
         {\centering%
@@ -156,7 +156,7 @@
     }
 
     \newcommand{\abstractpage}{%
-        \newgeometry{top=2in, bottom=2in}
+        \newgeometry{top=2in, bottom=1in}
         \thispagestyle{fancy}
         {\centering%
         ABSTRACT\\
@@ -178,7 +178,7 @@
 
 
     \newcommand{\dedicationpage}{%
-        \newgeometry{top=2in, bottom=2in}
+        \newgeometry{top=2in, bottom=1in}
         \thispagestyle{fancy}
         \singlespace
         {\centering
@@ -197,7 +197,7 @@
 
 
     \newcommand{\biographypage}{%
-        \newgeometry{top=2in, bottom=2in}
+        \newgeometry{top=2in, bottom=1in}
         \thispagestyle{fancy}
         \singlespace
         {\centering
@@ -216,7 +216,7 @@
         }
 
     \newcommand{\acknowledgmentspage}{%
-        \newgeometry{top=2in, bottom=2in}
+        \newgeometry{top=2in, bottom=1in}
         \thispagestyle{fancy}
         \singlespace
         {\centering%
