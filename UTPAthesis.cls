@@ -143,15 +143,16 @@
       }
 
     \newcommand{\Copyrightpage}{%
-        \newgeometry{top=2in, bottom=1in}
+        \newgeometry{top=0in, bottom=0in}
         \thispagestyle{empty}
-        \vspace*{\fill}
+        \mbox{}  % empty box
+        \vfill
         {\centering%
         Copyright~\UTPAField@Year~\UTPAField@Author \\
         All Rights Reserved
         \par
         }
-        \vspace{\fill}
+        \vfill
 
 
         \restoregeometry
