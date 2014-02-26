@@ -84,7 +84,6 @@
         by \\
         \vspace{\baselineskip}
         \UTPAField@UppercaseAuthor\\
-        \vspace{\baselineskip}
         \vfill  % provides equal spacing
         Submitted to the Graduate School of\\
         The University of Texas-Pan American\\
@@ -106,7 +105,6 @@
         \thispagestyle{empty}
         \singlespace
         \centering
-        \providecommand\pdfbookmark[3][]{} \pdfbookmark[0]{Title Page}{bm:Title}
         \doublespace
             {\UTPAField@UppercaseTitle}\par
         \singlespace
