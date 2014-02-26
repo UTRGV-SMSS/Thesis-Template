@@ -38,6 +38,7 @@
     \newcommand{\Advisor}[1]{\gdef\UTPAField@Advisor{#1}}
     \newcommand{\AdvisorTitle}[1]{\gdef\UTPAField@AdvisorTitle{#1}}
     \newcommand{\MemberA}[1]{\gdef\UTPAField@MemberA{#1}}
+    \newcommand{\MemberATitle}[1]{\gdef\UTPAField@MemberATitle{#1}}
     \newcommand{\MemberB}[1]{\gdef\UTPAField@MemberB{#1}}
     \newcommand{\MemberC}[1]{\gdef\UTPAField@MemberC{#1}}
     \newcommand{\MemberD}[1]{\gdef\UTPAField@MemberD{#1}}
@@ -56,6 +57,7 @@
     \degree{\uppercase{Master of Science}}
     \AdvisorTitle{Chair of Committee}
     \MemberA{}
+    \MemberATitle{Committee Member}
     \MemberB{}
     \MemberC{}
     \MemberD{}
@@ -119,7 +121,7 @@
         \UTPAField@AdvisorTitle\\
         \vfill
         \if \UTPAField@MemberA \relax \relax \else \mbox{\UTPAField@MemberA}\\
-                Committee Member\\
+                \UTPAField@MemberATitle \\
                 \vfill
         \fi
         \if \UTPAField@MemberB \relax \relax \else \mbox{\UTPAField@MemberB}\\
