@@ -98,6 +98,7 @@
         \par}
       \restoregeometry
         \insertblankpage
+        \addtocounter{page}{-1}  % don't increment page counter for this page
       }
 
     \newcommand{\Committeepage}{%
