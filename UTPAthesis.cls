@@ -52,7 +52,7 @@
 % Initialize the variables to their default values
 
     \Title{Titles Must Be in Mixed Case and May Not Exceed Six Inches}
-    \docname{thesis}
+    \docname{Thesis}
     \degree{\uppercase{Master of Science}}
     \AdvisorTitle{Chair of Committee}
     \MemberA{}
@@ -79,7 +79,7 @@
         \UTPAField@UppercaseTitle
         \singlespace
         \vfill  % provides equal spacing
-        A Thesis \\
+        A \UTPAField@DocName \\
         \vspace{\baselineskip}
         by \\
         \vspace{\baselineskip}
@@ -111,7 +111,7 @@
             {\UTPAField@UppercaseTitle}\par
         \singlespace
         \vspace{\baselineskip}
-        A Thesis \\
+        A \UTPAField@DocName \\
         by \\
         \UTPAField@UppercaseAuthor\\
         \vspace{3\baselineskip}
@@ -254,13 +254,13 @@
 
     \DeclareOption{masters}{%
       \degree{\uppercase{Master of Science}}
-      \docname{thesis}
+      \docname{Thesis}
       \AdvisorTitle{Chair of Committee}
     }
 
     \DeclareOption{phd}{%
       \degree{Doctor of Philosophy}
-      \docname{dissertation}
+      \docname{Dissertation}
       \AdvisorTitle{Chair}
     }
 
