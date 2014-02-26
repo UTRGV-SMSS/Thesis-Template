@@ -55,7 +55,10 @@
     \docname{thesis}
     \degree{\uppercase{Master of Science}}
     \AdvisorTitle{Chair of Committee}
-
+    \MemberA{}
+    \MemberB{}
+    \MemberC{}
+    \MemberD{}
 
 % define a command to insert a blank page
         \newcommand{\insertblankpage}{%
