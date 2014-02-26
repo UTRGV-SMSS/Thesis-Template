@@ -23,63 +23,68 @@
 
 % Insert the title of your thesis here.
 % If you have a long title, split it between multiple lines using the \\ command
- \Title{Titles Should Not Exceed Six Inches on One Line\\
+\Title{Titles Should Not Exceed Six Inches on One Line\\
    and In The Inverted Pyramid Format\\
    When Additional Lines Are Needed
 }
 
 
 % Insert your research advisor and his title here
- \Advisor{Dr. Leonhard Euler}
- \AdvisorTitle{Chair of Committee}
+\Advisor{Dr. Leonhard Euler}
+\AdvisorTitle{Chair of Committee}
 
 
 %% Insert the members of your committee here
- \MemberA{Dr. Carl Friedrich Gauss}
- \MemberB{Dr. G. F. Bernhard Riemann}
- \MemberC{}
- \MemberD{}
+\MemberA{Dr. Carl Friedrich Gauss}
+\MemberB{Dr. G. F. Bernhard Riemann}
+\MemberC{}
+\MemberD{}
 
 
 % Insert the text of your abstract here
- \Abstract{%
-   An abstract is a brief summary is often used to help the reader
-   quickly ascertain the paper's purpose.
- }
+\Abstract{%
+An abstract is a brief summary is often used to help the reader quickly
+ascertain the paper's purpose.
+}
 
 
 % You can dedicate your paper here
 \Dedication{%
-    Dedication should be simple, in good taste, and fit on one page.
-  }
+Dedication should be simple, in good taste, and fit on one page.
+}
+
 
 % Acknowledge those who helped and supported you here.
-  \Acknowledgments{%
-    Acknowledgements should be simple, in good taste, and fit on one page.
-  }
+\Acknowledgments{%
+Acknowledgements should be simple, in good taste, and fit on one page.
+}
+
 
 % Insert your biographical sketch here.
-  \BiographicalSketch{%
-    A brief biographical sketch of the student is required as part of each thesis.
-  }
+\BiographicalSketch{%
+A brief biographical sketch of the student is required as part of each thesis.
+}
 
 
 \begin{document}
 
- % This starts page counting in Roman numerals
- \frontmatter
+% This starts page counting in Roman numerals
+\frontmatter
 
- % This command makes the formal preliminary pages.
- % You can comment it out during the drafting process if you want to save paper.
- \makepreliminarypages
 
- % These insert a table of contents, list of tables, and list of figures.
- \tableofcontents
- \listoftables
- \listoffigures
+% This command makes the formal preliminary pages.
+% You can comment it out during the drafting process if you want to save paper.
+\makepreliminarypages
 
- % This starts regular page counting in Arabic numerals
- \mainmatter
+
+% These insert a table of contents, list of tables, and list of figures
+\tableofcontents
+\listoftables
+\listoffigures
+
+
+% This starts regular page counting in Arabic numerals
+\mainmatter
 
 
 % OK. Everything is set up. Insert your thesis below.
