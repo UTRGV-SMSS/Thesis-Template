@@ -399,9 +399,30 @@
 
 
 
-% The following fixes the prefix for appendices in TOC
 \makeatletter
+  % The following creates blank page before a chapter header
+\def\@makeappendixhead#1{%
+  \newpage
+  \mbox{}
+  {\centering
+    \vfill
+    \large \scshape
+         \@chapapp\space \thechapter \par
+    \vfill
+    \newpage
+
+    \vspace*{0.5in}
+    \@chapapp\space \thechapter \par
+    \vspace{\baselineskip}
+    #1\par\nobreak
+    \vspace{\baselineskip}
+  }
+}
+
 \g@addto@macro\appendix{%
+  % The following redefines the chapter header
+\let\@makechapterhead\@makeappendixhead
+  % The following fixes the prefix for appendices in TOC
   \addtocontents{toc}{%
     \protect\renewcommand{\protect\cftchappresnum}{\appendixname\space}%
   }%
