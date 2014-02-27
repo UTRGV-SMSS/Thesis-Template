@@ -1,0 +1,116 @@
+%\documentclass[masters,draft]{UTPAthesis}
+\documentclass[masters,final]{UTPAthesis}
+
+
+%% Load your packages below.
+%% Make hyperref and showkeys come at the end of your loaded packages
+%% to make sure they are not over-written.  They redefine many
+%% standard LaTeX commands
+\usepackage{blindtext}
+\usepackage{booktabs} % for better tables
+\usepackage[colorlinks=false]{hyperref}  % for urls
+\usepackage{showkeys}  % shows labels during draft mode
+
+
+% Insert your name here
+\Author{John Q. Citizen}
+\Major{Mathematics}
+
+
+% Insert your graduation date here
+\Year{2014}
+\Month{May}
+
+
+% Insert the title of your thesis here.
+% If you have a long title, split it between multiple lines using the \\ command
+\Title{Titles Should Not Exceed Six Inches on One Line\\
+   and In The Inverted Pyramid Format\\
+   When Additional Lines Are Needed
+}
+
+
+% Insert your research advisor and his title here
+\Advisor{Dr. Leonhard Euler}
+\AdvisorTitle{Chair of Committee}
+
+
+%% Insert the members of your committee here
+\MemberA{Dr. Carl Friedrich Gauss}  %\MemberATitle{Co-Chair of Committee}
+\MemberB{Dr. G. F. Bernhard Riemann}
+\MemberC{}
+\MemberD{}
+
+
+% Insert the text of your abstract here
+\Abstract{%
+  \blindtext
+}
+
+
+% You can dedicate your paper here
+\Dedication{%
+  \blindtext
+}
+
+
+% Acknowledge those who helped and supported you here.
+\Acknowledgments{%
+  \blindtext
+}
+
+
+% Insert your biographical sketch here.
+\BiographicalSketch{%
+  \blindtext
+}
+
+
+\begin{document}
+
+% This starts page counting in Roman numerals
+\frontmatter
+
+
+% This command makes the formal preliminary pages.
+% You can comment it out during the drafting process if you want to save paper.
+\makepreliminarypages
+
+
+% These insert a table of contents, list of tables, and list of figures
+\tableofcontents
+\listoftables
+\listoffigures
+
+
+% This starts regular page counting in Arabic numerals
+\mainmatter
+
+% This switches to double-spaced lines. Use 
+\doublespace
+
+% OK. Everything is set up. Insert your thesis below.
+% It's a good idea to split your thesis up into different files and use
+% the \input command
+\blinddocument
+\input{introduction.tex}
+
+
+%  Uncomment the following line for appendixes
+\appendix
+\blinddocument
+\input{introduction.tex}
+
+
+
+% This makes the bibliography.
+% Enter your references in the BibTex file "references.bib"
+% You can find bibtex info from Google Scholar.
+\bibliographystyle{siam}
+\bibliography{references}
+
+
+% This inserts your Biographical Sketch
+\biographypage
+
+\end{document}
