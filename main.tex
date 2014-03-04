@@ -7,6 +7,9 @@
 %% to make sure they are not over-written.  They redefine many
 %% standard LaTeX commands
 \usepackage{booktabs} % for better tables
+\usepackage[normalem]{ulem} % for underlining command \uline
+\usepackage{totcount} % for citation and reference counts
+\usepackage{lastpage} % to get the number of pages
 \usepackage[colorlinks=false]{hyperref}  % for urls
 \usepackage{showkeys}  % shows labels during draft mode
 
@@ -41,10 +44,27 @@
 \MemberD{}
 
 
-% Insert the text of your abstract here
+% Insert the text of your abstract below.
+% The thesis manual also requires a bibliography style "citation" here.
+% Insert the counts for tables and figures.
 \Abstract{%
-An abstract is a brief summary is often used to help the reader quickly
-ascertain the paper's purpose.
+  \noindent Citizen, John Q.,
+  \uline{This Is A Very Long Title To Show How To Place Breaks}.
+  Master of Science (MS),
+  May 2014,
+  \pageref{LastPage} pages,
+  ??  tables,
+  ?? figures,
+  \total{citesnum} references,
+  \total{citnum} titles.
+
+  An abstract is a brief summary often used to help the reader quickly
+  ascertain the paper's purpose.  The UTPA thesis manual requires your abstract
+  to have the bibliography style citation above. The latex macros above
+  count pages, tables, and references. The command
+  `noindent' prevents indention.  Unfortunately, the author of this template
+  hasn't figured out a way to cunt tables and figure reliably. You will have to
+  insert the counts for those manually.
 }
 
 
@@ -63,6 +83,18 @@ Acknowledgements should be simple, in good taste, and fit on one page.
 % Insert your biographical sketch here.
 \BiographicalSketch{%
 A brief biographical sketch of the student is required as part of each thesis.
+}
+
+
+% The following will set up counters that count citations and references.
+\AtBeginDocument{%
+\newtotcounter{citnum}
+\def\oldbibitem{} \let\oldbibitem=\bibitem
+\def\bibitem{\stepcounter{citnum}\oldbibitem}
+
+\newtotcounter{citesnum}
+\def\oldcite{} \let\oldcite=\cite
+\def\cite{\stepcounter{citesnum}\oldcite}
 }
 
 
