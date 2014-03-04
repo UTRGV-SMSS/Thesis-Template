@@ -431,3 +431,8 @@
 
 % this package is used to style the chapter, section, and subsection headings
 \usepackage[sc,center,tiny]{titlesec}
+
+% load more packages
+\usepackage[normalem]{ulem} % for underlining command \uline
+\usepackage{totcount} % for citation and reference counts
+\usepackage{lastpage} % to get the number of pages
