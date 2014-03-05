@@ -409,7 +409,6 @@
 
 
 
-\makeatletter
   % The following creates blank page before a chapter header
 \def\@makeappendixhead#1{%
   \newpage
@@ -452,7 +451,6 @@
     \protect\renewcommand{\protect\cftchappresnum}{\appendixname\space}%
   }%
 }
-\makeatother
 
 % this package is used to style the chapter, section, and subsection headings
 \usepackage[sc,center,tiny]{titlesec}
