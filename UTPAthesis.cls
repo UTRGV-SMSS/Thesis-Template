@@ -473,5 +473,3 @@
 \def\oldbibitem{} \let\oldbibitem=\bibitem
 \def\bibitem{\stepcounter{bibnum}\oldbibitem}
 
-\usepackage{hyperref}
-\usepackage{showkeys}
