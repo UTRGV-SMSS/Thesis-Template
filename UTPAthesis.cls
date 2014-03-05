@@ -14,7 +14,7 @@
 
 % These packages typeset the thesis with Times Roman font
 \usepackage{mathptmx}
-%\usepackage[T1]{fontenc}
+\usepackage[T1]{fontenc}
 
 \usepackage{amsmath}  % for ams mathematical environments
 \usepackage[letterpaper]{geometry} % for fixing margins
