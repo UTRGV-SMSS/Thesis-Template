@@ -442,6 +442,9 @@
 \usepackage{totcount} % for citation and reference counts
 \usepackage{lastpage} % to get the number of pages
 
+\newtotcounter{tablenum}  % counter for counting tables
+\newtotcounter{figurenum} % counter for counting figures
+
 \newtotcounter{citesnum} % counter for counting citations
 \def\oldcite{} \let\oldcite=\cite
 \def\cite{\stepcounter{citesnum}\oldcite}
