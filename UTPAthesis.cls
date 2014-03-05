@@ -41,6 +41,7 @@
     }
     \newcommand{\docname}[1]{\gdef\UTPAField@DocName{#1}}
     \newcommand{\degree}[1]{\gdef\UTPAField@Degree{#1}}
+    \newcommand{\degreeabbrev}[1]{\gdef\UTPAField@DegreeAbbrev{#1}}
     \newcommand{\Advisor}[1]{\gdef\UTPAField@Advisor{#1}}
     \newcommand{\AdvisorTitle}[1]{\gdef\UTPAField@AdvisorTitle{#1}}
     \newcommand{\MemberA}[1]{\gdef\UTPAField@MemberA{#1}}
@@ -61,6 +62,7 @@
     \Title{Titles Must Be in Mixed Case and May Not Exceed Six Inches}
     \docname{Thesis}
     \degree{\uppercase{Master of Science}}
+    \degreeabbrev{(MS)}
     \AdvisorTitle{Chair of Committee}
     \MemberA{}
     \MemberATitle{Committee Member}
@@ -281,12 +283,14 @@
 
     \DeclareOption{masters}{%
       \degree{\uppercase{Master of Science}}
+      \degreeabbrev{(MS)}
       \docname{Thesis}
       \AdvisorTitle{Chair of Committee}
     }
 
     \DeclareOption{phd}{%
       \degree{Doctor of Philosophy}
+      \degreeabbrev{(PhD)}
       \docname{Dissertation}
       \AdvisorTitle{Chair}
     }
