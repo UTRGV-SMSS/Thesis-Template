@@ -178,11 +178,27 @@
         \doublespace
         \raggedright
         {\setlength{\parindent}{0.5in}
-          \noindent\UTPAField@UlineTitle\\
-          \total{tablenum} tables,
-          \total{figurenum} figures,
-          \total{citesnum} references,
-          \total{bibnum} titles.
+          \noindent
+          \UTPAField@AuthorLastFirst,
+          \UTPAField@UlineTitle.\\
+          Master of Science~(MS),
+          \UTPAField@Month~\UTPAField@Year,
+          \pageref{LastPage}~pages,
+          \ifnum \totvalue{tablenum}=0
+             \relax
+          \else
+            {\ifnum\totvalue{tablenum}=1  \total{tablenum}~table,\else
+              \total{tablenum}~tables,\fi}
+          \fi
+          \ifnum \totvalue{figurenum}=0
+             \relax
+          \else
+            {\ifnum\totvalue{figurenum}=1 \total{figurenum}~figure,\else
+              \total{figurenum}~figures,\fi}
+          \fi
+          \total{citesnum}~references,
+          \total{bibnum}~titles.
+
         \UTPAField@Abstract\par
       }
 
