@@ -40,7 +40,10 @@
       \gdef\UTPAField@UppercaseAuthor{\uppercase{#1}}
     }
     \newcommand{\docname}[1]{\gdef\UTPAField@DocName{#1}}
-    \newcommand{\degree}[1]{\gdef\UTPAField@Degree{#1}}
+    \newcommand{\degree}[1]{
+      \gdef\UTPAField@Degree{#1}
+      \gdef\UTPAField@UppercaseDegree{\uppercase{#1}}
+    }
     \newcommand{\degreeabbrev}[1]{\gdef\UTPAField@DegreeAbbrev{#1}}
     \newcommand{\Advisor}[1]{\gdef\UTPAField@Advisor{#1}}
     \newcommand{\AdvisorTitle}[1]{\gdef\UTPAField@AdvisorTitle{#1}}
@@ -61,7 +64,7 @@
 
     \Title{Titles Must Be in Mixed Case and May Not Exceed Six Inches}
     \docname{Thesis}
-    \degree{\uppercase{Master of Science}}
+    \degree{Master of Science}
     \degreeabbrev{(MS)}
     \AdvisorTitle{Chair of Committee}
     \MemberA{}
@@ -99,7 +102,7 @@
         The University of Texas-Pan American\\
         In partial fulfillment of the requirements for the degree of\\
         \vspace{\baselineskip}
-        \UTPAField@Degree \\
+        \UTPAField@UppercaseDegree\\
         \vspace{7\baselineskip}  % skip 7 lines
         \UTPAField@Month~\UTPAField@Year\\
         \vspace{4\baselineskip}  % skip 4 lines
@@ -182,8 +185,8 @@
         {\setlength{\parindent}{0.5in}
           \noindent
           \UTPAField@AuthorLastFirst,
-          \UTPAField@UlineTitle.\\
-          Master of Science~(MS),
+          \UTPAField@UlineTitle.
+          \UTPAField@Degree~\UTPAField@DegreeAbbrev,
           \UTPAField@Month~\UTPAField@Year,
           \pageref{LastPage}~pages,
           \ifnum \totvalue{tablenum}=0
@@ -282,7 +285,7 @@
 
 
     \DeclareOption{masters}{%
-      \degree{\uppercase{Master of Science}}
+      \degree{Master of Science}
       \degreeabbrev{(MS)}
       \docname{Thesis}
       \AdvisorTitle{Chair of Committee}
