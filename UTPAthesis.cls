@@ -13,13 +13,13 @@
 
 
 % These packages typeset the thesis with Times Roman font
-\usepackage{mathptmx}
-\usepackage[T1]{fontenc}
+\RequirePackage{mathptmx}
+\RequirePackage[T1]{fontenc}
 
-\usepackage{amsmath}  % for ams mathematical environments
-\usepackage[letterpaper]{geometry} % for fixing margins
-\usepackage{indentfirst}  % for indention of first paragraph
-\usepackage{graphicx} % Allow the inclusion of graphics
+\RequirePackage{amsmath}  % for ams mathematical environments
+\RequirePackage[letterpaper]{geometry} % for fixing margins
+\RequirePackage{indentfirst}  % for indention of first paragraph
+\RequirePackage{graphicx} % Allow the inclusion of graphics
 
 
 
@@ -190,13 +190,13 @@
           \UTPAField@Month~\UTPAField@Year,
           \pageref{LastPage}~pages,
           \ifnum \totvalue{tablenum}=0
-             \relax
+             \relax \relax
           \else
             {\ifnum\totvalue{tablenum}=1  \total{tablenum}~table,\else
               \total{tablenum}~tables,\fi}
           \fi
           \ifnum \totvalue{figurenum}=0
-             \relax
+             \relax \relax
           \else
             {\ifnum\totvalue{figurenum}=1 \total{figurenum}~figure,\else
               \total{figurenum}~figures,\fi}
@@ -405,7 +405,7 @@
 
 % The fancyhdr package allows you to easily customize the page header.
 % The settings below produce a nice, well separated header.
-\usepackage{fancyhdr}
+\RequirePackage{fancyhdr}
 \fancyhead{}
 \renewcommand{\headrulewidth}{0pt}
   \pagestyle{fancy}
@@ -414,8 +414,8 @@
 
 %%%% tips from http://texblog.org/2011/09/09/10-ways-to-customize-tocloflot/
 %% Control the fonts and formatting used in the table of contents.
-\usepackage[titles]{tocloft}
-\usepackage{calc}  % load this for the \widthof command
+\RequirePackage[titles]{tocloft}
+\RequirePackage{calc}  % load this for the \widthof command
 
 \renewcommand{\cftchapfont}{\scshape} % change fonts
 \renewcommand{\cftchappagefont}{\normalfont}
@@ -475,12 +475,12 @@
 }
 
 % this package is used to style the chapter, section, and subsection headings
-\usepackage[sc,center,tiny]{titlesec}
+\RequirePackage[sc,center,tiny]{titlesec}
 
 % load more packages
-\usepackage[normalem]{ulem} % for underlining command \uline
-\usepackage{totcount} % for citation and reference counts
-\usepackage{lastpage} % to get the number of pages
+\RequirePackage[normalem]{ulem} % for underlining command \uline
+\RequirePackage{totcount} % for citation and reference counts
+\RequirePackage{lastpage} % to get the number of pages
 
 \newtotcounter{tablenum}  % counter for counting tables
 \newtotcounter{figurenum} % counter for counting figures
