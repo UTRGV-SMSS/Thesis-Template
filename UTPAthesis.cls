@@ -177,6 +177,11 @@
         \doublespace
         \raggedright
         {\setlength{\parindent}{0.5in}
+          \noindent\UTPAField@UlineTitle\\
+          \total{tablenum} tables,
+          \total{figurenum} figures,
+          \total{citesnum} references,
+          \total{bibnum} titles.
         \UTPAField@Abstract\par
       }
 
