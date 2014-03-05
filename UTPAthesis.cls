@@ -34,6 +34,7 @@
         \expandafter\uline\expandafter{\tmp}%
       }
     }
+    \newcommand{\AuthorLastFirst}[1]{\gdef\UTPAField@AuthorLastFirst{#1}}
     \newcommand{\Author}[1]{
       \gdef\UTPAField@Author{#1}
       \gdef\UTPAField@UppercaseAuthor{\uppercase{#1}}
