@@ -46,16 +46,6 @@
 % The thesis manual also requires a bibliography style "citation" here.
 % Insert the counts for tables and figures.
 \Abstract{%
-  \noindent Citizen, John Q.,
-  \uline{Titles Should Not Exceed Six Inches on One Line and In The Inverted Pyramid Format When Additional Lines Are Needed}.
-  Master of Science (MS),
-  May 2014,
-  \pageref{LastPage} pages,
-  ??  tables,
-  ?? figures,
-  \total{citesnum} references,
-  \total{citnum} titles.
-
   An abstract is a brief summary often used to help the reader quickly
   ascertain the paper's purpose.  The UTPA thesis manual requires your abstract
   to have the bibliography style citation above. The latex macros above
@@ -84,16 +74,6 @@ A brief biographical sketch of the student is required as part of each thesis.
 }
 
 
-% The following will set up counters that count citations and references.
-\AtBeginDocument{%
-\newtotcounter{citnum}
-\def\oldbibitem{} \let\oldbibitem=\bibitem
-\def\bibitem{\stepcounter{citnum}\oldbibitem}
-
-\newtotcounter{citesnum}
-\def\oldcite{} \let\oldcite=\cite
-\def\cite{\stepcounter{citesnum}\oldcite}
-}
 
 
 \begin{document}
