@@ -441,3 +441,14 @@
 \usepackage[normalem]{ulem} % for underlining command \uline
 \usepackage{totcount} % for citation and reference counts
 \usepackage{lastpage} % to get the number of pages
+
+\newtotcounter{citesnum} % counter for counting citations
+\def\oldcite{} \let\oldcite=\cite
+\def\cite{\stepcounter{citesnum}\oldcite}
+
+\newtotcounter{bibnum} % counter for counting titles in bibliography
+\def\oldbibitem{} \let\oldbibitem=\bibitem
+\def\bibitem{\stepcounter{bibnum}\oldbibitem}
+
+\usepackage{hyperref}
+\usepackage{showkeys}
