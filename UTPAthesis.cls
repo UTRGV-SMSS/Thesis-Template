@@ -28,6 +28,11 @@
     \newcommand{\Title}[1]{
       \gdef\UTPAField@Title{#1}
       \gdef\UTPAField@UppercaseTitle{\uppercase{#1}}
+      \def\UTPAField@UlineTitle{%
+        \def\\{\relax}%
+        \protected@edef\tmp{\UTPAField@Title}%
+        \expandafter\uline\expandafter{\tmp}%
+      }
     }
     \newcommand{\Author}[1]{
       \gdef\UTPAField@Author{#1}
