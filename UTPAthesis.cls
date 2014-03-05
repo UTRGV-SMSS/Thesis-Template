@@ -408,6 +408,21 @@
   % The following creates blank page before a chapter header
 \def\@makeappendixhead#1{%
   \newpage
+% This macro redefines the \chapter command to
+% count figures and tables before the counters are cleared
+% http://tex.stackexchange.com/questions/60505/custom-chapter-definition
+\renewcommand\chapter{%
+  \addtocounter{tablenum}{\value{table}}
+  \addtocounter{figurenum}{\value{figure}}
+\if@openright\cleardoublepage\else\clearpage\fi
+                    \thispagestyle{plain}%
+                    \global\@topnum\z@
+                    \@afterindentfalse
+                    \secdef\@chapter\@schapter
+                  }
+
+
+
   \mbox{}
   {\centering
     \vfill
