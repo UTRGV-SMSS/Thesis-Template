@@ -394,8 +394,8 @@
         \Committeepage
         \Copyrightpage
         \abstractpage
-        \dedicationpage
-        \acknowledgmentspage
+        \if \UTPAField@Dedication \relax \else  \dedicationpage  \fi
+        \if \UTPAField@Acknowledgments \relax \else \acknowledgmentspage \fi
         \restoregeometry
         \doublespace
          \setlength{\parindent}{0.5in}
