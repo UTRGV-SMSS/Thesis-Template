@@ -160,7 +160,7 @@
         \mbox{}  % empty box
         \vfill
         {\centering%
-        Copyright~\UTPAField@Year~\UTPAField@Author \\
+        \copyright~\UTPAField@Year~\UTPAField@Author \\
         All Rights Reserved
         \par
         }
