@@ -397,15 +397,12 @@
 % Define the macro for making preliminary pages
     \newcommand{\makepreliminarypages}{%
       % We insert the pages heres and adjust spacing and geometry
-        \singlespace
         \utpatitlepage
         \committeepage
         \copyrightpage
         \abstractpage
         \dedicationpage
         \acknowledgmentspage
-        \restoregeometry
-        \doublespace
          \setlength{\parindent}{0.5in}
     }
 
