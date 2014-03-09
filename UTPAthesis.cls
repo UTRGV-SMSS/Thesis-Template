@@ -84,7 +84,7 @@
 
 % Define the preliminary page layouts using the variables
 
-    \newcommand{\UTPAtitlepage}{%
+    \newcommand{\utpatitlepage}{%
         \newgeometry{top=2in,bottom=1in}
         \thispagestyle{empty}
         {\centering
@@ -113,7 +113,7 @@
         \addtocounter{page}{-1}  % don't increment page counter for this page
       }
 
-    \newcommand{\Committeepage}{%
+    \newcommand{\committeepage}{%
         \newgeometry{top=2in, bottom=1in}
         \thispagestyle{empty}
         \singlespace
@@ -154,7 +154,7 @@
         \insertblankpage
       }
 
-    \newcommand{\Copyrightpage}{%
+    \newcommand{\copyrightpage}{%
         \newgeometry{top=0in, bottom=0in}
         \thispagestyle{empty}
         \mbox{}  % empty box
@@ -390,9 +390,9 @@
     \newcommand{\makepreliminarypages}{%
       % We insert the pages heres and adjust spacing and geometry
         \singlespace
-        \UTPAtitlepage
-        \Committeepage
-        \Copyrightpage
+        \utpatitlepage
+        \committeepage
+        \copyrightpage
         \abstractpage
         \if \UTPAField@Dedication \relax \else  \dedicationpage  \fi
         \if \UTPAField@Acknowledgments \relax \else \acknowledgmentspage \fi
