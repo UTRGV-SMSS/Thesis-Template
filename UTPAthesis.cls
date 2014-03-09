@@ -480,7 +480,7 @@
 }
 
 % this package is used to style the chapter, section, and subsection headings
-\RequirePackage[sc,center,tiny]{titlesec}
+\RequirePackage[sc,center,tiny,compact]{titlesec}
 
 % load more packages
 \RequirePackage[normalem]{ulem} % for underlining command \uline
