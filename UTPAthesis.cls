@@ -125,7 +125,7 @@
         A \UTPAField@DocName \\
         by \\
         \UTPAField@UppercaseAuthor\\
-        \vspace{3\baselineskip}
+        \vfill
         \uppercase{Committee Members} \\
         \vfill
         \UTPAField@Advisor\\
