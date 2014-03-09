@@ -215,6 +215,9 @@
 
 
     \newcommand{\dedicationpage}{%
+      \if \UTPAField@Dedication
+       \relax
+      \else
         \newgeometry{top=2in, bottom=1in}
         \thispagestyle{fancy}
         \singlespace
@@ -230,6 +233,7 @@
       }
         \restoregeometry
         \insertblankpage
+      \fi
         }
 
 
@@ -253,6 +257,9 @@
         }
 
     \newcommand{\acknowledgmentspage}{%
+      \if \UTPAField@Acknowledgments
+        \relax
+      \else
         \newgeometry{top=2in, bottom=1in}
         \thispagestyle{fancy}
         \singlespace
@@ -269,6 +276,7 @@
       }
         \restoregeometry
         \insertblankpage
+      \fi
         }
 
 
@@ -394,8 +402,8 @@
         \committeepage
         \copyrightpage
         \abstractpage
-        \if \UTPAField@Dedication \relax \else  \dedicationpage  \fi
-        \if \UTPAField@Acknowledgments \relax \else \acknowledgmentspage \fi
+        \dedicationpage
+        \acknowledgmentspage
         \restoregeometry
         \doublespace
          \setlength{\parindent}{0.5in}
