@@ -181,7 +181,6 @@
         }
         \addcontentsline{toc}{chapter}{Abstract}
         \doublespace
-        \raggedright
         {\setlength{\parindent}{0.5in}
           \noindent
           \UTPAField@AuthorLastFirst,
@@ -269,7 +268,6 @@
         \par
         }
         \addcontentsline{toc}{chapter}{Acknowledgments}
-        \raggedright
         {\setlength{\parindent}{0.5in}
         \doublespace
         \UTPAField@Acknowledgments\par
