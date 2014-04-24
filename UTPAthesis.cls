@@ -117,7 +117,7 @@
         \newgeometry{top=2in, bottom=1in}
         \thispagestyle{empty}
         \singlespace
-        \centering
+        {\centering
         \doublespace
             {\UTPAField@UppercaseTitle}\par
         \singlespace
@@ -149,7 +149,7 @@
         \fi
         \mbox{\UTPAField@Month~\UTPAField@Year} \\
         \par
-
+      }
         \restoregeometry
         \insertblankpage
       }
