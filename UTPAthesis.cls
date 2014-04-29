@@ -498,3 +498,10 @@
 \def\oldbibitem{} \let\oldbibitem=\bibitem
 \def\bibitem{\stepcounter{bibnum}\oldbibitem}
 
+
+% Change numbering style of chapters to Roman.  Keep Arabic for subsections
+\renewcommand\thechapter{\Roman{chapter}}
+\renewcommand\thesection{\arabic{chapter}.\arabic{section}}
+\renewcommand\theequation{\arabic{chapter}.\arabic{equation}}
+\renewcommand\thefigure{\arabic{chapter}.\arabic{figure}}
+\renewcommand\thetable{\arabic{chapter}.\arabic{table}}
