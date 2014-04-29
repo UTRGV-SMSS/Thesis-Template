@@ -434,6 +434,8 @@
 \setlength{\cftbeforesecskip}{1ex}
 \setlength{\cftbeforesubsecskip}{1ex}
 \addtocontents{toc}{~\hfill{Page}\par}
+\addtocontents{lof}{~\hfill{Page}\par}
+\addtocontents{lot}{~\hfill{Page}\par}
 
 % This macro redefines the \chapter command to
 % count figures and tables before the counters are cleared
