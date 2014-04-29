@@ -480,7 +480,19 @@
 }
 
 % this package is used to style the chapter, section, and subsection headings
-\RequirePackage[sc,center,tiny,compact]{titlesec}
+%\RequirePackage[sc,center,tiny,compact]{titlesec}
+\RequirePackage[center,tiny,compact]{titlesec}
+\titleformat{\chapter}[display]{\scshape\filcenter}
+{%
+{\chaptertitlename}~\thechapter \vspace{0.75\baselineskip}
+}
+{0in}{}[]
+\titlespacing{\chapter}{0in}{0.75in}{0.75\baselineskip}
+
+\titleformat{\subsection}[block]
+  {\normalfont\bfseries}
+  {\thesubsection~}{0in}{\bfseries}
+
 
 % load more packages
 \RequirePackage[normalem]{ulem} % for underlining command \uline
