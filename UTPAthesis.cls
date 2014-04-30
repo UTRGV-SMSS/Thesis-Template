@@ -493,6 +493,13 @@
   {\normalfont\bfseries}
   {\thesubsection~}{0in}{\bfseries}
 
+\titleformat{\subsubsection}[runin]
+  {\normalfont\bfseries}
+  {}{0in}{\indent}[]
+
+\titleformat{\paragraph}[runin]
+  {\normalfont\bfseries\itshape}
+  {}{0in}{\indent}[]
 
 % load more packages
 \RequirePackage[normalem]{ulem} % for underlining command \uline
