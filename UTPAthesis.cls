@@ -85,7 +85,7 @@
 % Define the preliminary page layouts using the variables
 
     \newcommand{\utpatitlepage}{%
-        \newgeometry{top=2in,bottom=1in}
+        \newgeometry{top=2in, bottom=1in, left=1in, right=1in}
         \thispagestyle{empty}
         {\centering
           \doublespace
@@ -114,7 +114,7 @@
       }
 
     \newcommand{\committeepage}{%
-        \newgeometry{top=2in, bottom=1in}
+        \newgeometry{top=2in, bottom=1in, left=1in, right=1in}
         \thispagestyle{empty}
         \singlespace
         {\centering
@@ -155,7 +155,7 @@
       }
 
     \newcommand{\copyrightpage}{%
-        \newgeometry{top=0in, bottom=0in}
+        \newgeometry{top=0in, bottom=0in, left=1in, right=1in}
         \thispagestyle{empty}
         \mbox{}  % empty box
         \vfill
@@ -172,7 +172,7 @@
     }
 
     \newcommand{\abstractpage}{%
-        \newgeometry{top=2in, bottom=1in}
+        \newgeometry{top=2in, bottom=1in, left=1in, right=1in}
         \thispagestyle{fancy}
         {\centering%
         ABSTRACT\\
@@ -217,7 +217,7 @@
       \if \UTPAField@Dedication
        \relax
       \else
-        \newgeometry{top=2in, bottom=1in}
+        \newgeometry{top=2in, bottom=1in, left=1in, right=1in}
         \thispagestyle{fancy}
         \singlespace
         {\centering
@@ -237,7 +237,7 @@
 
 
     \newcommand{\biographypage}{%
-        \newgeometry{top=2in, bottom=1in}
+        \newgeometry{top=2in, bottom=1in, left=1in, right=1in}
         \thispagestyle{fancy}
         \singlespace
         {\centering
@@ -259,7 +259,7 @@
       \if \UTPAField@Acknowledgments
         \relax
       \else
-        \newgeometry{top=2in, bottom=1in}
+        \newgeometry{top=2in, bottom=1in, left=1in, right=1in}
         \thispagestyle{fancy}
         \singlespace
         {\centering%
