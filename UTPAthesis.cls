@@ -343,6 +343,7 @@
 % and bookmarking issues relating to ETD submission
     \let\TEMPtableofcontents\tableofcontents
     \renewcommand{\tableofcontents}{%
+        \newgeometry{top=1in, bottom=1in, left=1.00in, right=1in}
       \renewcommand{\contentsname}{Table of Contents}
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{Table of Contents}
@@ -358,6 +359,7 @@
  %and bookmarking issues
     \let\TEMPlistoffigures\listoffigures
     \renewcommand{\listoffigures}{%
+      \newgeometry{top=1in, bottom=1in, left=1in, right=1in}
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{List of Figures}
       \singlespace
@@ -372,6 +374,7 @@
  %and bookmarking issues
     \let\TEMPlistoftables\listoftables
     \renewcommand{\listoftables}{%
+      \newgeometry{top=1in, bottom=1in, left=1in, right=1in}
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{List of Tables}
       \singlespace
@@ -386,9 +389,11 @@
     \let\TEMPbibliography\bibliography
     \renewcommand{\bibliography}{%
       \clearpage
+      \newgeometry{top=1in, bottom=1in, left=1in, right=1in}
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{Bibliography}
       \TEMPbibliography
+      \restoregeometry
     }
 
 
