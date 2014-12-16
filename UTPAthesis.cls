@@ -343,7 +343,7 @@
 % and bookmarking issues relating to ETD submission
     \let\TEMPtableofcontents\tableofcontents
     \renewcommand{\tableofcontents}{%
-      \renewcommand{\contentsname}{Table of Contents}
+      \renewcommand{\contentsname}{TABLE OF CONTENTS}
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{Table of Contents}
       \singlespace
