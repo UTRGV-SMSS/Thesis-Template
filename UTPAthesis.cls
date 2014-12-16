@@ -427,7 +427,6 @@
 \renewcommand{\cftchappresnum}{CHAPTER~} % add the word "chapter" to toc entreis
 \AtBeginDocument{\addtolength\cftchapnumwidth{\widthof{\scshape Chapter~}}}
 
-\renewcommand{\contentsname}{Table of Contents}
 
 %% Aesthetic spacing redefines that look nicer to me than the defaults.
 %% this applies to table of contents
