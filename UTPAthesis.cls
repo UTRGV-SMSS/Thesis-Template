@@ -312,6 +312,10 @@
     \relax
     \LoadClass[letterpaper,12pt, oneside]{book}
 
+\renewcommand{\contentsname}{TABLE OF CONTENTS}
+\renewcommand\listfigurename{LIST OF FIGURES}
+\renewcommand\listtablename{LIST OF TABLES}
+\renewcommand{\bibname}{BIBLIOGRAPHY}
 
 % A couple of useful macros for line spacing
 
@@ -343,7 +347,6 @@
 % and bookmarking issues relating to ETD submission
     \let\TEMPtableofcontents\tableofcontents
     \renewcommand{\tableofcontents}{%
-      \renewcommand{\contentsname}{TABLE OF CONTENTS}
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{Table of Contents}
       \singlespace
