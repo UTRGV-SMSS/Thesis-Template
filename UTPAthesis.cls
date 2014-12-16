@@ -481,8 +481,9 @@
 
 % this package is used to style the chapter, section, and subsection headings
 %\RequirePackage[sc,center,tiny,compact]{titlesec}
-\RequirePackage[center,tiny,compact]{titlesec}
-\titleformat{\chapter}[display]{\scshape\filcenter}
+\RequirePackage[center,tiny,compact,uppercase]{titlesec}
+
+\titleformat{\chapter}[display]{\filcenter}
 {%
 {\chaptertitlename}~\thechapter \vspace{0.75\baselineskip}
 }
