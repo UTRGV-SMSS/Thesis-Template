@@ -420,8 +420,8 @@
 \RequirePackage[titles]{tocloft}
 \RequirePackage{calc}  % load this for the \widthof command
 
-\renewcommand{\cftchapfont}{\scshape} % change fonts
 \renewcommand{\chaptername}{CHAPTER}
+\renewcommand{\cftchapfont}{\uppercase} % change fonts
 \renewcommand{\cftchappagefont}{\normalfont}
 \renewcommand{\cftchapleader}{\cftdotfill{2.6}} % Add Table of Contents dots
 \renewcommand{\cftchappresnum}{Chapter~} % add the word "chapter" to toc entreis
