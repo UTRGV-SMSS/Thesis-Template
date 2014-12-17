@@ -422,8 +422,14 @@
 %% Control the fonts and formatting used in the table of contents.
 \RequirePackage[titles]{tocloft}
 \RequirePackage{calc}  % load this for the \widthof command
+\RequirePackage{etoolbox}  % for \patchcmd
 
-\renewcommand{\cftchapfont}{\uppercase} % change fonts
+\patchcmd{\l@chapter}  % patch command provided by tocloft
+  {\cftchapfont #1}%   search pattern
+  {\uppercase{#1}}% replace by
+  {}%                  success
+  {}%                  failure
+
 \renewcommand{\cftchappagefont}{\normalfont}
 \renewcommand{\cftchapleader}{\cftdotfill{2.6}} % Add Table of Contents dots
 \renewcommand{\cftchappresnum}{CHAPTER~} % add the word "chapter" to toc entreis
