@@ -466,15 +466,15 @@
   \mbox{}
   {\centering
     \vfill
-    \large \scshape
-         \@chapapp\space \thechapter \par
+    \normalsize
+         APPENDIX\space \thechapter \par
     \vfill
     \newpage
 
     \vspace*{0.5in}
-    \@chapapp\space \thechapter \par
+    APPENDIX\space \thechapter \par
     \vspace{\baselineskip}
-    #1\par\nobreak
+    \uppercase{#1}\par\nobreak
     \vspace{\baselineskip}
   }
 }
