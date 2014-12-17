@@ -423,7 +423,6 @@
 \RequirePackage[titles]{tocloft}
 \RequirePackage{calc}  % load this for the \widthof command
 
-\renewcommand{\chaptername}{CHAPTER}
 \renewcommand{\cftchapfont}{\uppercase} % change fonts
 \renewcommand{\cftchappagefont}{\normalfont}
 \renewcommand{\cftchapleader}{\cftdotfill{2.6}} % Add Table of Contents dots
@@ -443,6 +442,7 @@
 % This macro redefines the \chapter command to
 % count figures and tables before the counters are cleared
 % http://tex.stackexchange.com/questions/60505/custom-chapter-definition
+\renewcommand{\chaptername}{CHAPTER}
 \renewcommand\chapter{%
   \addtocounter{tablenum}{\value{table}}
   \addtocounter{figurenum}{\value{figure}}
