@@ -449,6 +449,7 @@
 % count figures and tables before the counters are cleared
 % http://tex.stackexchange.com/questions/60505/custom-chapter-definition
 \renewcommand{\chaptername}{CHAPTER}
+%% This was copied and modified from book.cls
 \renewcommand\chapter{%
   \addtocounter{tablenum}{\value{table}}
   \addtocounter{figurenum}{\value{figure}}
@@ -458,6 +459,26 @@
   \@afterindentfalse
   \secdef\@chapter\@schapter
 }
+
+%% This was copied and modified from book.cls
+\def\@chapter[#1]#2{\ifnum \c@secnumdepth >\m@ne
+                       \if@mainmatter
+                         \refstepcounter{chapter}%
+                         \typeout{\@chapapp\space\thechapter.}%
+                         \addcontentsline{toc}{chapter}%
+                                   {\protect\numberline{\thechapter}#1}%
+                       \else
+                         \addcontentsline{toc}{chapter}{#1}%
+                       \fi
+                    \else
+                      \addcontentsline{toc}{chapter}{#1}%
+                    \fi
+                    \chaptermark{#1}%
+                    \addtocontents{lof}{\protect\addvspace{10\p@}}%
+                    \addtocontents{lot}{\protect\addvspace{10\p@}}%
+                    \@makechapterhead{\uppercase{#2}}%
+                    \@afterheading
+                    }
 
 
 % The following creates blank page before a chapter header
