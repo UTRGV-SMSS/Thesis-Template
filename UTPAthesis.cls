@@ -187,7 +187,7 @@
           \UTPAField@UlineTitle.
           \UTPAField@Degree~\UTPAField@DegreeAbbrev,
           \UTPAField@Month,~\UTPAField@Year,
-          \pageref{LastPage}~pages,
+          \pageref{LastPage}~pp.,
           \ifnum \totvalue{tablenum}=0
              \relax \relax
           \else
