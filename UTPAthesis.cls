@@ -433,7 +433,7 @@
 \renewcommand{\cftchappagefont}{\normalfont}
 \renewcommand{\cftchapleader}{\cftdotfill{2.6}} % Add Table of Contents dots
 \renewcommand{\cftchappresnum}{CHAPTER~} % add the word "chapter" to toc entreis
-\AtBeginDocument{\addtolength\cftchapnumwidth{\widthof{\scshape Chapter~}}}
+\AtBeginDocument{\addtolength\cftchapnumwidth{\widthof{CHAPTER~~}}}
 
 
 %% Aesthetic spacing redefines that look nicer to me than the defaults.
