@@ -529,7 +529,7 @@
 
 
 % Change numbering style of chapters to Roman.  Keep Arabic for subsections
-\renewcommand\thechapter{\Roman{chapter}}
+\renewcommand\thechapter{\Roman{chapter}.}
 \renewcommand\thesection{\arabic{chapter}.\arabic{section}}
 \renewcommand\theequation{\arabic{chapter}.\arabic{equation}}
 \renewcommand\thefigure{\arabic{chapter}.\arabic{figure}}
