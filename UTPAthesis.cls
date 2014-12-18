@@ -494,7 +494,7 @@
 
 \titleformat{\chapter}[display]{\filcenter}
 {%
-{\chaptertitlename}~\thechapter \vspace{0.75\baselineskip}
+{\chaptertitlename}~\Roman{chapter} \vspace{0.75\baselineskip}
 }
 {0in}{}[]
 \titlespacing{\chapter}{0in}{0.75in}{0.75\baselineskip}
