@@ -52,6 +52,7 @@
     \newcommand{\MemberB}[1]{\gdef\UTPAField@MemberB{#1}}
     \newcommand{\MemberC}[1]{\gdef\UTPAField@MemberC{#1}}
     \newcommand{\MemberD}[1]{\gdef\UTPAField@MemberD{#1}}
+    \newcommand{\MemberE}[1]{\gdef\UTPAField@MemberE{#1}}
     \newcommand{\Month}[1]{\gdef\UTPAField@Month{#1}}
     \newcommand{\Year}[1]{\gdef\UTPAField@Year{#1}}
     \newcommand{\Abstract}[1]{\gdef\UTPAField@Abstract{#1}}
@@ -72,6 +73,7 @@
     \MemberB{}
     \MemberC{}
     \MemberD{}
+    \MemberE{}
 
 % define a command to insert a blank page
         \newcommand{\insertblankpage}{%
@@ -144,6 +146,10 @@
                 \vfill
         \fi
         \if \UTPAField@MemberD \relax \relax \else \mbox{\UTPAField@MemberD}\\
+                Committee Member\\
+                \vfill
+        \fi
+        \if \UTPAField@MemberE \relax \relax \else \mbox{\UTPAField@MemberE}\\
                 Committee Member\\
                 \vfill
         \fi
