@@ -526,6 +526,13 @@
 {0in}{}[]
 \titlespacing{\chapter}{0in}{0.75in}{0.75\baselineskip}
 
+\titleformat{\section}[block]
+  {\bfseries\filcenter}
+  {\arabic{chapter}.\arabic{section}~~}
+  {0in}
+  {}
+  []
+
 \titleformat{\subsection}[block]
   {\normalfont\bfseries}
   {\thesubsection~}{0in}{\bfseries}
