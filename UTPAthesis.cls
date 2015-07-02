@@ -451,6 +451,11 @@
 \addtocontents{lof}{~\hfill{Page}\par}
 \addtocontents{lot}{~\hfill{Page}\par}
 
+% These add the words Figure or Table before entries in List of Figures/Tables
+\renewcommand{\cftfigfont}{Figure }
+\renewcommand{\cfttabfont}{Table }
+
+
 % This macro redefines the \chapter command to
 % count figures and tables before the counters are cleared
 % http://tex.stackexchange.com/questions/60505/custom-chapter-definition
