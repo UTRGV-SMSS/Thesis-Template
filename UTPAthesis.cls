@@ -84,6 +84,10 @@
           \newpage
         }
 
+
+    \newcommand{\chapterappendixname}[1]{\gdef\UTPAField@ChapterAppendixName{#1}}
+    \chapterappendixname{CHAPTER~}
+
 % Define the preliminary page layouts using the variables
 
     \newcommand{\utpatitlepage}{%
@@ -440,8 +444,6 @@
 
 \renewcommand{\cftchappagefont}{\normalfont}
 \renewcommand{\cftchapleader}{\cftdotfill{2.6}} % Add Table of Contents dots
-\renewcommand{\cftchappresnum}{CHAPTER~} % add the word "chapter" to toc entreis
-\AtBeginDocument{\addtolength\cftchapnumwidth{\widthof{CHAPTER~~}}}
 
 
 %% Aesthetic spacing redefines that look nicer to me than the defaults.
@@ -479,7 +481,7 @@
                          \refstepcounter{chapter}%
                          \typeout{\@chapapp\space\thechapter.}%
                          \addcontentsline{toc}{chapter}%
-                                   {\protect\numberline{\thechapter}#1}%
+                                   {\UTPAField@ChapterAppendixName\thechapter~#1}%
                        \else
                          \addcontentsline{toc}{chapter}{#1}%
                        \fi
@@ -515,6 +517,7 @@
 
 \g@addto@macro\appendix{%
   % The following redefines the chapter header
+  \chapterappendixname{APPENDIX~}
 \let\@makechapterhead\@makeappendixhead
   % The following fixes the prefix for appendices in TOC
   \addtocontents{toc}{%
