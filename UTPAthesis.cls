@@ -489,8 +489,6 @@
                       \addcontentsline{toc}{chapter}{#1}%
                     \fi
                     \chaptermark{#1}%
-                    \addtocontents{lof}{\protect\addvspace{10\p@}}%
-                    \addtocontents{lot}{\protect\addvspace{10\p@}}%
                     \@makechapterhead{\uppercase{#2}}%
                     \@afterheading
                     }
