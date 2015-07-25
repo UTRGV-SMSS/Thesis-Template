@@ -451,6 +451,9 @@
 \setlength{\cftbeforechapskip}{1ex}
 \setlength{\cftbeforesecskip}{1ex}
 \setlength{\cftbeforesubsecskip}{1ex}
+\renewcommand\cftfigafterpnum{\vskip5pt\par}
+\renewcommand\cfttabafterpnum{\vskip5pt\par}
+
 \addtocontents{toc}{~\hfill{Page}\par}
 \addtocontents{lof}{~\hfill{Page}\par}
 \addtocontents{lot}{~\hfill{Page}\par}
