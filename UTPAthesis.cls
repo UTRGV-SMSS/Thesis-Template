@@ -370,6 +370,7 @@
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{List of Figures}
       \singlespace
+        \newgeometry{top=2in, bottom=1in, left=0.75in, right=1in}
       \TEMPlistoffigures
       \doublespace
         \thispagestyle{fancy}
@@ -384,6 +385,7 @@
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{List of Tables}
       \singlespace
+        \newgeometry{top=2in, bottom=1in, left=0.75in, right=1in}
       \TEMPlistoftables
       \doublespace
         \thispagestyle{fancy}
@@ -529,7 +531,7 @@
 {\chaptertitlename}~\Roman{chapter} \vspace{0.75\baselineskip}
 }
 {0in}{}[]
-\titlespacing{\chapter}{0in}{0.75in}{0.75\baselineskip}
+\titlespacing{\chapter}{0in}{0.625in}{0.75\baselineskip}
 
 \titleformat{\section}[block]
   {\bfseries\filcenter}
