@@ -500,6 +500,7 @@
 % The following creates blank page before a chapter header
 \def\@makeappendixhead#1{%
   \newpage
+  \newgeometry{top=0in, bottom=0in, left=1in, right=1in}
   \mbox{}
   {\centering
     \vfill
