@@ -403,6 +403,7 @@
       \clearpage
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{Bibliography}
+      \restoregeometry % restore geometry that was modified by appendix
       \TEMPbibliography
     }
 
