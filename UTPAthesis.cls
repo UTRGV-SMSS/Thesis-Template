@@ -105,7 +105,7 @@
         \UTPAField@UppercaseAuthor\\
         \vfill  % provides equal spacing
         Submitted to the Graduate School of\\
-        The University of Texas-Pan American\\
+        The University of Texas Rio Grande Valley\\
         In partial fulfillment of the requirements for the degree of\\
         \vspace{\baselineskip}
         \UTPAField@UppercaseDegree\\
