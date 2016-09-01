@@ -1,8 +1,8 @@
  \NeedsTeXFormat{LaTeX2e}
- \ProvidesClass{UTPAthesis}[2013/12/14 UTPA Theses and Dissertations]
+ \ProvidesClass{UTRGVthesis}[2016/09/01 UTRGV Theses and Dissertations]
 
-% The UTPAthesis class is for producing theses and dissertations
-% that meet the UTPA requirements.
+% The UTRGVthesis class is for producing theses and dissertations
+% that meet the UTRGV requirements.
 %
 % The following class options are available
 %
