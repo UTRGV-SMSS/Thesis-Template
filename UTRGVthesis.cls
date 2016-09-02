@@ -248,11 +248,10 @@
     \newcommand{\biographypage}{%
         \newgeometry{top=2in, bottom=1in, left=1in, right=1in}
         \thispagestyle{fancy}
-        \singlespacing
         {\centering
         BIOGRAPHICAL SKETCH
         \par}
-      \vspace{2\baselineskip}
+      \vspace{\baselineskip}
          \small\normalsize%
         \addcontentsline{toc}{chapter}{Biographical Sketch}
           \doublespacing
