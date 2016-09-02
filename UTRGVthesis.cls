@@ -20,7 +20,7 @@
 \RequirePackage[letterpaper]{geometry} % for fixing margins
 \RequirePackage{indentfirst}  % for indention of first paragraph
 \RequirePackage{graphicx} % Allow the inclusion of graphics
-
+\RequirePackage{setspace} % Allow double spacing with the \doublespacing
 
 
 % Declare some variables to hold the text fields for the preliminary pages
@@ -94,9 +94,9 @@
         \newgeometry{top=2in, bottom=1in, left=1in, right=1in}
         \thispagestyle{empty}
         {\centering
-          \doublespace
+          \doublespacing
         \UTPAField@UppercaseTitle
-        \singlespace
+        \singlespacing
         \vfill  % provides equal spacing
         A \UTPAField@DocName \\
         \vspace{\baselineskip}
@@ -122,11 +122,11 @@
     \newcommand{\committeepage}{%
         \newgeometry{top=2in, bottom=1in, left=1in, right=1in}
         \thispagestyle{empty}
-        \singlespace
+        \singlespacing
         {\centering
-        \doublespace
+        \doublespacing
             {\UTPAField@UppercaseTitle}\par
-        \singlespace
+        \singlespacing
         \vspace{\baselineskip}
         A \UTPAField@DocName \\
         by \\
@@ -190,7 +190,7 @@
         \par
         }
         \addcontentsline{toc}{chapter}{Abstract}
-        \doublespace
+        \doublespacing
         {\setlength{\parindent}{0.5in}
           \noindent
           \UTPAField@AuthorLastFirst,
@@ -229,14 +229,14 @@
       \else
         \newgeometry{top=2in, bottom=1in, left=1in, right=1in}
         \thispagestyle{fancy}
-        \singlespace
+        \singlespacing
         {\centering
         DEDICATION
         \par}
       \vspace{2\baselineskip}
          \small\normalsize%
         \addcontentsline{toc}{chapter}{Dedication}
-          \doublespace
+          \doublespacing
         {\setlength{\parindent}{0.5in}
         \UTPAField@Dedication
       }
@@ -249,14 +249,14 @@
     \newcommand{\biographypage}{%
         \newgeometry{top=2in, bottom=1in, left=1in, right=1in}
         \thispagestyle{fancy}
-        \singlespace
+        \singlespacing
         {\centering
         BIOGRAPHICAL SKETCH
         \par}
       \vspace{2\baselineskip}
          \small\normalsize%
         \addcontentsline{toc}{chapter}{Biographical Sketch}
-          \doublespace
+          \doublespacing
         {\setlength{\parindent}{0.5in}
         \UTPAField@BiographicalSketch
       }
@@ -271,7 +271,7 @@
       \else
         \newgeometry{top=2in, bottom=1in, left=1in, right=1in}
         \thispagestyle{fancy}
-        \singlespace
+        \singlespacing
         {\centering%
         ACKNOWLEDGMENTS\\
         \vspace{\baselineskip}
@@ -279,7 +279,7 @@
         }
         \addcontentsline{toc}{chapter}{Acknowledgments}
         {\setlength{\parindent}{0.5in}
-        \doublespace
+        \doublespacing
         \UTPAField@Acknowledgments\par
       }
         \restoregeometry
@@ -327,14 +327,6 @@
 \renewcommand\listtablename{LIST OF TABLES}
 \renewcommand{\bibname}{BIBLIOGRAPHY}
 
-% A couple of useful macros for line spacing
-
-    % The \singlespace macro switches to single spaced lines
-    \newcommand{\singlespace}{\par\renewcommand{\baselinestretch}{1}\small\normalsize\par}
-
-    % The \doublespace macro switches to double spaced lines
-    \newcommand{\doublespace}{\par\renewcommand{\baselinestretch}{1.66}\small\normalsize\par}
-
 
 % Set the margins to UTPA specifications
 
@@ -359,9 +351,9 @@
     \renewcommand{\tableofcontents}{%
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{Table of Contents}
-      \singlespace
+      \singlespacing
       \TEMPtableofcontents
-      \doublespace
+      \doublespacing
         \thispagestyle{fancy}
         \restoregeometry
         \insertblankpage
@@ -373,10 +365,10 @@
     \renewcommand{\listoffigures}{%
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{List of Figures}
-      \singlespace
+      \singlespacing
         \newgeometry{top=2in, bottom=1in, left=0.75in, right=1in}
       \TEMPlistoffigures
-      \doublespace
+      \doublespacing
         \thispagestyle{fancy}
         \restoregeometry
         \insertblankpage
@@ -388,10 +380,10 @@
     \renewcommand{\listoftables}{%
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{List of Tables}
-      \singlespace
+      \singlespacing
         \newgeometry{top=2in, bottom=1in, left=0.75in, right=1in}
       \TEMPlistoftables
-      \doublespace
+      \doublespacing
         \thispagestyle{fancy}
         \restoregeometry
         \insertblankpage
