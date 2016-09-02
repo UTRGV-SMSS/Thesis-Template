@@ -229,15 +229,14 @@
       \else
         \newgeometry{top=2in, bottom=1in, left=1in, right=1in}
         \thispagestyle{fancy}
-        \singlespacing
         {\centering
         DEDICATION
         \par}
-      \vspace{2\baselineskip}
+      \vspace{\baselineskip}
          \small\normalsize%
         \addcontentsline{toc}{chapter}{Dedication}
-          \doublespacing
         {\setlength{\parindent}{0.5in}
+          \doublespacing
         \UTPAField@Dedication
       }
         \restoregeometry
