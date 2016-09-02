@@ -322,7 +322,7 @@
 \renewcommand{\contentsname}{TABLE OF CONTENTS}
 \renewcommand\listfigurename{LIST OF FIGURES}
 \renewcommand\listtablename{LIST OF TABLES}
-\renewcommand{\bibname}{BIBLIOGRAPHY}
+\renewcommand{\bibname}{BIBLIOGRAPHY\vspace{\baselineskip}}
 
 
 % Set the margins to UTPA specifications
