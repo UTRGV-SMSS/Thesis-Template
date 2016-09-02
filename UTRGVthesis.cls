@@ -266,20 +266,19 @@
 
     \newcommand{\acknowledgmentspage}{%
       \if \UTPAField@Acknowledgments
-        \relax
+       \relax
       \else
         \newgeometry{top=2in, bottom=1in, left=1in, right=1in}
         \thispagestyle{fancy}
-        \singlespacing
-        {\centering%
-        ACKNOWLEDGMENTS\\
-        \vspace{\baselineskip}
-        \par
-        }
-        \addcontentsline{toc}{chapter}{Acknowledgments}
+        {\centering
+          ACKNOWLEDGMENTS
+        \par}
+      \vspace{\baselineskip}
+         \small\normalsize%
+         \addcontentsline{toc}{chapter}{Acknowledgments}
         {\setlength{\parindent}{0.5in}
-        \doublespacing
-        \UTPAField@Acknowledgments\par
+          \doublespacing
+          \UTPAField@Acknowledgments
       }
         \restoregeometry
         \insertblankpage
