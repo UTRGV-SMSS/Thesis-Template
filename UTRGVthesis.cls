@@ -447,9 +447,9 @@
 \renewcommand\cftfigafterpnum{\vskip5pt\par}
 \renewcommand\cfttabafterpnum{\vskip5pt\par}
 
-\addtocontents{toc}{~\hfill{Page}\par}
-\addtocontents{lof}{~\hfill{Page}\par}
-\addtocontents{lot}{~\hfill{Page}\par}
+\addtocontents{toc}{\vspace{\baselineskip}~\hfill{Page}\par}
+\addtocontents{lof}{\vspace{\baselineskip}~\hfill{Page}\par}
+\addtocontents{lot}{\vspace{\baselineskip}~\hfill{Page}\par}
 
 % These add the words Figure or Table before entries in List of Figures/Tables
 \renewcommand{\cftfigfont}{Figure }
