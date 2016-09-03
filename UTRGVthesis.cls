@@ -158,6 +158,7 @@
                 \vfill
         \fi
         \mbox{\UTPAField@Month~\UTPAField@Year} \\
+        \vspace{5\baselineskip}  % skip 5 lines to line up with previous page
         \par
       }
         \restoregeometry
