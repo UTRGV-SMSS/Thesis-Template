@@ -377,8 +377,8 @@
     \renewcommand{\listoftables}{%
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{List of Tables}
+        \newgeometry{top=1.125in, bottom=1in, left=0.75in, right=1in}
       \singlespacing
-        \newgeometry{top=2in, bottom=1in, left=0.75in, right=1in}
       \TEMPlistoftables
       \doublespacing
         \thispagestyle{fancy}
