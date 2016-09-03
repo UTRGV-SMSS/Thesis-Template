@@ -169,13 +169,14 @@
         \newgeometry{top=0in, bottom=0in, left=1in, right=1in}
         \thispagestyle{empty}
         \mbox{}  % empty box
-        \vfill
         {\centering%
+        \vfill
         Copyright~\UTPAField@Year~\UTPAField@Author \\
-        All Rights Reserved
+        All Rights Reserved\\
+        \rule{0cm}{1cm}  % moves up the text by 0.5cm
+        \vfill
         \par
         }
-        \vfill
 
 
         \restoregeometry
