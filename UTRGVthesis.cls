@@ -95,7 +95,7 @@
         \thispagestyle{empty}
         {\centering
           \doublespacing
-        \UTPAField@UppercaseTitle
+        \UTPAField@UppercaseTitle\par
         \singlespacing
         \vfill  % provides equal spacing
         A \UTPAField@DocName \\
