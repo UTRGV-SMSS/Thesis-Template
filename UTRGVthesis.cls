@@ -492,16 +492,17 @@
 % The following creates blank page before a chapter header
 \def\@makeappendixhead#1{%
   \newpage
-  \newgeometry{top=0in, bottom=0in, left=1in, right=1in}
   \mbox{}
   {\centering
     \vfill
     \normalsize
          APPENDIX\space \thechapter \par
+         \vspace{0.375in} %centers the Appendix title
     \vfill
+  }
     \newpage
-
-    \vspace*{0.5in}
+  {\centering
+    \vspace*{0.625in}
     APPENDIX\space \thechapter \par
     \vspace{\baselineskip}
     \uppercase{#1}\par\nobreak
