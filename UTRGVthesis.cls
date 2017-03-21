@@ -507,6 +507,7 @@
     \uppercase{#1}\par\nobreak
     \vspace{\baselineskip}
   }
+  \doublespacing
 }
 
 \g@addto@macro\appendix{%
