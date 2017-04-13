@@ -253,7 +253,8 @@
         {\centering
         BIOGRAPHICAL SKETCH
         \par}
-      \vspace{\baselineskip}
+      \vspace{-\baselineskip}
+      \vspace{0.5in}
          \small\normalsize%
         \addcontentsline{toc}{chapter}{Biographical Sketch}
           \doublespacing
