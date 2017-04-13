@@ -352,6 +352,8 @@
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{Table of Contents}
       \singlespacing
+      % top margin should be 2inches
+      \newgeometry{top=1.125in, bottom=1in, left=1in, right=1in}
       \TEMPtableofcontents
       \doublespacing
         \thispagestyle{fancy}
