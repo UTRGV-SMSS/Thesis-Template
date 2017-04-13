@@ -104,7 +104,7 @@
         \vspace{\baselineskip}
         \UTPAField@UppercaseAuthor\\
         \vfill  % provides equal spacing
-        Submitted to the Graduate School of\\
+        Submitted to the Graduate College of\\
         The University of Texas Rio Grande Valley\\
         In partial fulfillment of the requirements for the degree of\\
         \vspace{\baselineskip}
