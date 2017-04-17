@@ -524,12 +524,15 @@
     \vfill
   }
     \newpage
-  {\centering
-    \vspace*{0.625in}
+  {
+    \singlespacing
+    \centering
+    \vspace*{0.75in}
     APPENDIX\space \thechapter \par
     \vspace{1cm}
     \uppercase{#1}\par\nobreak
     \vspace{1cm}
+    \vspace{-0.60\baselineskip} % to account for double spaced line height
   }
   \doublespacing
 }
