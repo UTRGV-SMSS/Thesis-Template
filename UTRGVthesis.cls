@@ -527,9 +527,9 @@
   {\centering
     \vspace*{0.625in}
     APPENDIX\space \thechapter \par
-    \vspace{0.5in}
+    \vspace{1cm}
     \uppercase{#1}\par\nobreak
-    \vspace{\baselineskip}
+    \vspace{1cm}
   }
   \doublespacing
 }
