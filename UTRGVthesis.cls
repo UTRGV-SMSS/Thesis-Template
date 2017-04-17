@@ -474,13 +474,32 @@
   \secdef\@chapter\@schapter
 }
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  creates a boolean that indicates whether we are in appendix mode
+\newif\ifappendix
+
+\let\TEMPappendix\appendix
+
+\renewcommand{\appendix}{%
+  \appendixtrue
+  \TEMPappendix
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 %% This was copied and modified from book.cls
 \def\@chapter[#1]#2{\ifnum \c@secnumdepth >\m@ne
                        \if@mainmatter
                          \refstepcounter{chapter}%
                          \typeout{\@chapapp\space\thechapter.}%
-                         \addcontentsline{toc}{chapter}%
-                                   {\UTPAField@ChapterAppendixName\thechapter~#1}%
+                         \ifappendix  %% omits appendix title from TOC
+                           \addcontentsline{toc}{chapter}%
+                               {\UTPAField@ChapterAppendixName\thechapter~}%
+                         \else
+                           \addcontentsline{toc}{chapter}%
+                               {\UTPAField@ChapterAppendixName\thechapter~#1}%
+                         \fi
                        \else
                          \addcontentsline{toc}{chapter}{#1}%
                        \fi
