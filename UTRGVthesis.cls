@@ -527,7 +527,7 @@
   {\centering
     \vspace*{0.625in}
     APPENDIX\space \thechapter \par
-    \vspace{\baselineskip}
+    \vspace{0.5in}
     \uppercase{#1}\par\nobreak
     \vspace{\baselineskip}
   }
