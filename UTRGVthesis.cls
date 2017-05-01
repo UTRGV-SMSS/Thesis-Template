@@ -459,6 +459,11 @@
 \renewcommand{\cfttabfont}{Table }
 
 
+% These add a colon after entries in List of Figures/Tables
+\renewcommand{\cftfigaftersnum}{:}
+\renewcommand{\cfttabaftersnum}{:}
+
+
 % This macro redefines the \chapter command to
 % count figures and tables before the counters are cleared
 % http://tex.stackexchange.com/questions/60505/custom-chapter-definition
