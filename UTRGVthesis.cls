@@ -322,9 +322,10 @@
     \relax
     \LoadClass[letterpaper,12pt, oneside]{book}
 
-\renewcommand{\contentsname}{TABLE OF CONTENTS}
-\renewcommand\listfigurename{LIST OF FIGURES}
-\renewcommand\listtablename{LIST OF TABLES}
+% changes name of lists and adds space after title
+\renewcommand{\contentsname}{TABLE OF CONTENTS\vspace{\baselineskip}}
+\renewcommand\listfigurename{LIST OF FIGURES\vspace{\baselineskip}}
+\renewcommand\listtablename{LIST OF TABLES\vspace{\baselineskip}}
 \renewcommand{\bibname}{BIBLIOGRAPHY\vspace{\baselineskip}}
 
 
