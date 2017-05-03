@@ -531,7 +531,7 @@
   {
     \singlespacing
     \centering
-    \vspace*{0.75in}
+    \vspace*{0.78125in}
     APPENDIX\space \thechapter \par
     \vspace{1cm}
     \uppercase{#1}\par\nobreak
