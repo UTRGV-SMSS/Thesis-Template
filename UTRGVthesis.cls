@@ -322,9 +322,9 @@
     \relax
     \LoadClass[letterpaper,12pt, oneside]{book}
 
-\renewcommand{\contentsname}{TABLE OF CONTENTS}
-\renewcommand\listfigurename{LIST OF FIGURES}
-\renewcommand\listtablename{LIST OF TABLES}
+\renewcommand{\contentsname}{TABLE OF CONTENTS\vspace{-0.20in}}
+\renewcommand\listfigurename{LIST OF FIGURES\vspace{-0.20in}}
+\renewcommand\listtablename{LIST OF TABLES\vspace{-0.20in}}
 \renewcommand{\bibname}{BIBLIOGRAPHY\vspace{\baselineskip}}
 
 
