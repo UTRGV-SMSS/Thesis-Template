@@ -462,6 +462,21 @@
 }
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  creates a boolean that indicates whether we are in appendix mode
+\newif\ifinappendix
+
+\let\TEMPappendix\appendix
+\renewcommand{\appendix}{%
+  \inappendixtrue
+  \resetchapterspacing{0.625in}
+  \setcounter{chapter}{0}%
+  \setcounter{section}{0}%
+  \gdef\@chapapp{APPENDIX}%
+  \gdef\thechapter{\@Alph\c@chapter}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % This macro redefines the \chapter command to
 % count figures and tables before the counters are cleared
 % http://tex.stackexchange.com/questions/60505/custom-chapter-definition
@@ -479,14 +494,9 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%  creates a boolean that indicates whether we are in appendix mode
-\newif\ifinappendix
+%  creates blank page with the APPENDIX A before appendix
+\newcounter{appendixtracker}
 
-\let\TEMPappendix\appendix
-
-\renewcommand{\appendix}{%
-  \inappendixtrue
-  \TEMPappendix
 \newcommand\preappendix{
   \setcounter{appendixtracker}{\value{chapter}} % captures chapter counter
   \stepcounter{appendixtracker} % uses correct chapter counter before it is set
@@ -502,9 +512,9 @@
   }
   \newpage
 }
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 %% This was copied and modified from book.cls
 \def\@chapter[#1]#2{\ifnum \c@secnumdepth >\m@ne
                        \if@mainmatter
@@ -530,40 +540,7 @@
                     }
 
 
-% The following creates blank page before a chapter header
-\def\@makeappendixhead#1{%
-  \newpage
-  \mbox{}
-  {\centering
-    \vfill
-    \normalsize
-         APPENDIX\space \thechapter \par
-         \vspace{0.375in} %centers the Appendix title
-    \vfill
-  }
-    \newpage
-  {
-    \singlespacing
-    \centering
-    \vspace*{0.78125in}
-    APPENDIX\space \thechapter \par
-    \vspace{1cm}
-    \uppercase{#1}\par\nobreak
-    \vspace{1cm}
-    \vspace{-0.60\baselineskip} % to account for double spaced line height
-  }
-  \doublespacing
-}
 
-\g@addto@macro\appendix{%
-  % The following redefines the chapter header
-  \chapterappendixname{APPENDIX~}
-\let\@makechapterhead\@makeappendixhead
-  % The following fixes the prefix for appendices in TOC
-  \addtocontents{toc}{%
-    \protect\renewcommand{\protect\cftchappresnum}{\appendixname\space}%
-  }%
-}
 
 % this package is used to style the chapter, section, and subsection headings
 %\RequirePackage[sc,center,tiny,compact]{titlesec}
