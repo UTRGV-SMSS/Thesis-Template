@@ -388,7 +388,8 @@
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{Bibliography}
       \restoregeometry % restore geometry that was modified by appendix
-      \newgeometry{top=1.125in, bottom=1in, left=1in, right=1in}
+      \inappendixfalse
+      \resetchapterspacing{0.70in}
       \TEMPbibliography
     }
 
