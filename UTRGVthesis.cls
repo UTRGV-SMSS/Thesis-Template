@@ -490,6 +490,20 @@
 \renewcommand{\appendix}{%
   \inappendixtrue
   \TEMPappendix
+\newcommand\preappendix{
+  \setcounter{appendixtracker}{\value{chapter}} % captures chapter counter
+  \stepcounter{appendixtracker} % uses correct chapter counter before it is set
+  \newpage
+  \thispagestyle{fancy}%
+  \mbox{}  % empty box
+  {\centering%
+  \vfill
+  APPENDIX~\Alph{appendixtracker}
+  \vspace{1.25\baselineskip}
+  \vfill
+  \par
+  }
+  \newpage
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
