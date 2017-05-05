@@ -603,3 +603,23 @@
 \renewcommand\theequation{\arabic{chapter}.\arabic{equation}}
 \renewcommand\thefigure{\arabic{chapter}.\arabic{figure}}
 \renewcommand\thetable{\arabic{chapter}.\arabic{table}}
+
+
+\newcommand{\margins}{
+    \usepackage{tikz}
+    \usetikzlibrary{calc}
+    \newcommand{\marginguides}{% For a logo drawn with TikZ
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill [fill=gray!10,line width=0pt] (-2in,-5.5in) rectangle (8.50in, 1in);
+        \fill [fill=gray!40,line width=0pt] (-2in,-2in) rectangle (8.50in, 1in);
+        \fill [fill=gray!10,line width=0pt] (-2in,-1in) rectangle (8.50in, 1in);
+     \end{tikzpicture}
+   }
+
+    \usepackage[all]{background}
+    \SetBgPosition{current page.north west}% Select location
+    \SetBgOpacity{1.0}% Select opacity
+    \SetBgAngle{0.0}% Select roation of logo
+    \SetBgScale{1.0}% Select scale factor of logo
+    \SetBgContents{\marginguides}% Set tikz picture
+}
