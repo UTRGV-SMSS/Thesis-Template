@@ -489,6 +489,9 @@
   \thispagestyle{plain}%
   \global\@topnum\z@
   \@afterindentfalse
+  \ifinappendix % checks to see if appendix
+    \preappendix  % inserts appendix prepage
+  \fi
   \secdef\@chapter\@schapter
 }
 
