@@ -248,13 +248,7 @@
 
 
     \newcommand{\biographypage}{%
-        \newgeometry{top=2in, bottom=1in, left=1in, right=1in}
-        \thispagestyle{fancy}
-        {\centering
-        BIOGRAPHICAL SKETCH
-        \par}
-      \vspace{\baselineskip}
-         \small\normalsize%
+      \chapter*{BIOGRAPHICAL SKETCH}
         \addcontentsline{toc}{chapter}{Biographical Sketch}
           \doublespacing
         {\setlength{\parindent}{0.5in}
