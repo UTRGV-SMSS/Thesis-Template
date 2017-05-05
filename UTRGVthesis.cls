@@ -555,11 +555,15 @@
 %\RequirePackage[sc,center,tiny,compact]{titlesec}
 \RequirePackage[center,tiny,compact,uppercase]{titlesec}
 
-\titleformat{\chapter}[display]{\filcenter}
-{%
-{\chaptertitlename}~\Roman{chapter} \vspace{0.75\baselineskip}
-}
-{0in}{}[]
+
+\titleformat{\chapter}
+  [display] % shape
+  {\filcenter} % format
+  {{\chaptertitlename}~\Roman{chapter}} %label
+  {0.75\baselineskip} % separation between label and title body
+  {} % code preceding the title body
+  [] % code following the title body
+
 \titlespacing{\chapter}{0in}{0.625in}{0.75\baselineskip}
 
 \titleformat{\section}[block]
