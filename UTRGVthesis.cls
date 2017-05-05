@@ -85,9 +85,6 @@
         }
 
 
-    \newcommand{\chapterappendixname}[1]{\gdef\UTPAField@ChapterAppendixName{#1}}
-    \chapterappendixname{CHAPTER~}
-
 % Define the preliminary page layouts using the variables
 
     \newcommand{\utpatitlepage}{%
