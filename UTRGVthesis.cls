@@ -170,7 +170,7 @@
         \vfill
         Copyright~\UTPAField@Year~\UTPAField@Author \\
         All Rights Reserved\\
-        \rule{0cm}{1cm}  % moves up the text by 0.5cm
+        \rule{0cm}{0.5\baselineskip}  % moves up the text by 0.5cm
         \vfill
         \par
         }
