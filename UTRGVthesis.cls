@@ -515,10 +515,10 @@
                          \typeout{\@chapapp\space\thechapter.}%
                          \ifinappendix  %% omits appendix title from TOC
                            \addcontentsline{toc}{chapter}%
-                               {\UTPAField@ChapterAppendixName\thechapter~}%
+                               {APPENDIX~\thechapter}%
                          \else
                            \addcontentsline{toc}{chapter}%
-                               {\UTPAField@ChapterAppendixName\thechapter~#1}%
+                               {CHAPTER~\thechapter~#1}%
                          \fi
                        \else
                          \addcontentsline{toc}{chapter}{#1}%
