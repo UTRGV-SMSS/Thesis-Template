@@ -463,6 +463,14 @@
 \renewcommand{\cfttabaftersnum}{:}
 
 
+\newcommand{\resetchapterspacing}[1]{
+  \titlespacing{\chapter}
+    {0in} % increases the left margin
+    {#1} % vertical space before the title
+    {.75\baselineskip} % separation between title and text
+}
+
+
 % This macro redefines the \chapter command to
 % count figures and tables before the counters are cleared
 % http://tex.stackexchange.com/questions/60505/custom-chapter-definition
