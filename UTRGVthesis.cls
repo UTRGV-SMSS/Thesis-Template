@@ -530,7 +530,7 @@
                                {APPENDIX~\thechapter}%
                          \else
                            \addcontentsline{toc}{chapter}%
-                               {CHAPTER~\thechapter~#1}%
+                             {CHAPTER~\Roman{chapter}.~#1}%
                          \fi
                        \else
                          \addcontentsline{toc}{chapter}{#1}%
@@ -599,7 +599,7 @@
 
 
 % Change numbering style of chapters to Roman.  Keep Arabic for subsections
-\renewcommand\thechapter{\Roman{chapter}.}
+\renewcommand\thechapter{\Roman{chapter}}
 \renewcommand\thesection{\arabic{chapter}.\arabic{section}}
 \renewcommand\theequation{\arabic{chapter}.\arabic{equation}}
 \renewcommand\thefigure{\arabic{chapter}.\arabic{figure}}
