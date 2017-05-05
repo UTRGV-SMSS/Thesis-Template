@@ -554,7 +554,7 @@
 \titleformat{\chapter}
   [display] % shape
   {\filcenter} % format
-  {{\chaptertitlename}~\Roman{chapter}} %label
+  {{\chaptertitlename}~\thechapter} %label
   {0.75\baselineskip} % separation between label and title body
   {} % code preceding the title body
   [] % code following the title body
