@@ -486,7 +486,7 @@
   \addtocounter{tablenum}{\value{table}}
   \addtocounter{figurenum}{\value{figure}}
   \if@openright\cleardoublepage\else\clearpage\fi
-  \thispagestyle{plain}%
+  \thispagestyle{fancy}%
   \global\@topnum\z@
   \@afterindentfalse
   \ifinappendix % checks to see if appendix
