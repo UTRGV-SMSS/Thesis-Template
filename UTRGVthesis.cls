@@ -526,6 +526,7 @@
                     \chaptermark{#1}%
                     \@makechapterhead{\uppercase{#2}}%
                     \@afterheading
+                    \doublespacing
                     }
 
 
