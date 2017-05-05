@@ -481,12 +481,12 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  creates a boolean that indicates whether we are in appendix mode
-\newif\ifappendix
+\newif\ifinappendix
 
 \let\TEMPappendix\appendix
 
 \renewcommand{\appendix}{%
-  \appendixtrue
+  \inappendixtrue
   \TEMPappendix
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -497,7 +497,7 @@
                        \if@mainmatter
                          \refstepcounter{chapter}%
                          \typeout{\@chapapp\space\thechapter.}%
-                         \ifappendix  %% omits appendix title from TOC
+                         \ifinappendix  %% omits appendix title from TOC
                            \addcontentsline{toc}{chapter}%
                                {\UTPAField@ChapterAppendixName\thechapter~}%
                          \else
