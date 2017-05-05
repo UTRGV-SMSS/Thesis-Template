@@ -447,8 +447,8 @@
 \addtocontents{lot}{\vspace{\baselineskip}~\hfill{Page}\par\vspace{2mm}}
 
 % These add the words Figure or Table before entries in List of Figures/Tables
-\renewcommand{\cftfigfont}{Figure }
-\renewcommand{\cfttabfont}{Table }
+\renewcommand{\cftfigfont}{\hspace{-17pt}Figure } % fix margin of lof
+\renewcommand{\cfttabfont}{\hspace{-17pt}Table } % fix margin of lot
 
 
 % These add a colon after entries in List of Figures/Tables
