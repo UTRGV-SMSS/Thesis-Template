@@ -245,6 +245,7 @@
 
 
     \newcommand{\biographypage}{%
+      \inappendixfalse
       \chapter*{BIOGRAPHICAL SKETCH}
         \addcontentsline{toc}{chapter}{Biographical Sketch}
           \doublespacing
