@@ -388,9 +388,7 @@
       \clearpage
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{Bibliography}
-      \restoregeometry % restore geometry that was modified by appendix
       \inappendixfalse
-      \resetchapterspacing{0.70in}
       \TEMPbibliography
     }
 
@@ -471,7 +469,6 @@
 \let\TEMPappendix\appendix
 \renewcommand{\appendix}{%
   \inappendixtrue
-  \resetchapterspacing{0.625in}
   \setcounter{chapter}{0}%
   \setcounter{section}{0}%
   \gdef\@chapapp{APPENDIX}%
