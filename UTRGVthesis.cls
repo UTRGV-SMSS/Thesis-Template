@@ -546,6 +546,7 @@
 %% This was copied and modified from book.cls
 \renewenvironment{thebibliography}[1]
      {\chapter*{\bibname}%
+       \singlespacing
       \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
       \list{\@biblabel{\@arabic\c@enumiv}}%
            {\settowidth\labelwidth{\@biblabel{#1}}%
