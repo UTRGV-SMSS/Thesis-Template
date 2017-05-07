@@ -548,6 +548,8 @@
      {\chapter*{\bibname}%
        \singlespacing
       \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
+      \vspace{-70pt}  % makes space between title and text zero
+      \vspace{2\baselineskip}  % add two blank line spaces
       \list{\@biblabel{\@arabic\c@enumiv}}%
            {\settowidth\labelwidth{\@biblabel{#1}}%
             \leftmargin\labelwidth
