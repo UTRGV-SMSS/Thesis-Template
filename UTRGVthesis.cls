@@ -631,7 +631,7 @@
 \renewcommand\thetable{\arabic{chapter}.\arabic{table}}
 
 
-\newcommand{\margins}{
+\newcommand{\margins}{%
   \ifdefined \tikz
     \relax
   \else
@@ -640,12 +640,13 @@
     \usetikzlibrary{calc}
     \newcommand{\marginguides}{% For a logo drawn with TikZ
     \begin{tikzpicture}[remember picture,overlay,yscale=-1]
-        \fill [fill=gray!20,line width=0pt] (0in,11in) rectangle (8.5in, 5.5in);
-        \fill [fill=gray!40,line width=0pt] (7.5in,0in) rectangle (8.5in, 11in);
-        \fill [fill=gray!40,line width=0pt] (7.5in,0in) rectangle (8.5in, 11in);
-        \fill [fill=gray!40,line width=0pt] (0in,0in) rectangle (1in, 11in);
-        \fill [fill=gray!50,line width=0pt] (0in,2in) rectangle (8.5in, 1in);
-     \end{tikzpicture}
+        \fill [fill=gray!10,line width=0pt] (0in,11in) rectangle (8.5in, 5.5in);
+        \fill [fill=gray!20,line width=0pt] (7.5in,0in) rectangle (8.5in, 11in);
+        \fill [fill=gray!20,line width=0pt] (7.5in,0in) rectangle (8.5in, 11in);
+        \fill [fill=gray!20,line width=0pt] (0in,0in) rectangle (1in, 11in);
+        \fill [fill=gray!30,line width=0pt] (0in,2in) rectangle (8.5in, 1in);
+        \fill [fill=gray!30,line width=0pt] (0in,11in) rectangle (8.5in, 10in);
+     \end{tikzpicture}%
    }
 
     \usepackage[all]{background}
