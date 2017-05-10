@@ -649,6 +649,11 @@
      \end{tikzpicture}%
    }
 
+    \newcommand{\hhbar}[2]{% For a logo drawn with TikZ
+    \begin{tikzpicture}[remember picture,overlay,yscale=-1]
+      \fill [fill=blue!20,line width=0pt] (0in,##1) rectangle (8.5in,##1 + ##2);
+    \end{tikzpicture}%
+   }
     \usepackage[all]{background}
     \SetBgPosition{current page.north west}% Select location
     \SetBgOpacity{1.0}% Select opacity
