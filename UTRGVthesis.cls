@@ -168,10 +168,12 @@
         \mbox{}  % empty box
         {\centering%
         \vfill
+        \doublespacing
         Copyright~\UTPAField@Year~\UTPAField@Author \\
         All Rights Reserved\\
-        \rule{0cm}{0.5\baselineskip}  % moves up the text by 0.5cm
+        \vspace{10pt}  % moves up text to center
         \vfill
+        \singlespacing
         \par
         }
 
