@@ -632,7 +632,11 @@
 
 
 \newcommand{\margins}{
+  \ifdefined \tikz
+    \relax
+  \else
     \usepackage{tikz}
+  \fi
     \usetikzlibrary{calc}
     \newcommand{\marginguides}{% For a logo drawn with TikZ
     \begin{tikzpicture}[remember picture,overlay,yscale=-1]
