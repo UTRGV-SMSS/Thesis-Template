@@ -585,7 +585,10 @@
   {} % code preceding the title body
   [] % code following the title body
 
-\titlespacing{\chapter}{0in}{0.625in}{0.75\baselineskip}
+\titlespacing*{\chapter}
+  {0in} % increases the left margin
+  {0.625in} % the vertical space before the title
+  {0.75\baselineskip} % the separation between title and text
 
 \titleformat{\section}[block]
   {\bfseries\filcenter}
