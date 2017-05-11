@@ -421,7 +421,6 @@
 %%%% tips from http://texblog.org/2011/09/09/10-ways-to-customize-tocloflot/
 %% Control the fonts and formatting used in the table of contents.
 \RequirePackage[titles]{tocloft}
-\RequirePackage{calc}  % load this for the \widthof command
 \RequirePackage{etoolbox}  % for \patchcmd
 
 \patchcmd{\l@chapter}  % patch command provided by tocloft
