@@ -526,7 +526,7 @@
                          \typeout{\@chapapp\space\thechapter.}%
                          \ifinappendix  %% omits appendix title from TOC
                            \addcontentsline{toc}{chapter}%
-                               {APPENDIX~\thechapter}%
+                             {APPENDIX~\Alph{chapter}}%
                          \else
                            \addcontentsline{toc}{chapter}%
                              {CHAPTER~\Roman{chapter}.~#1}%
