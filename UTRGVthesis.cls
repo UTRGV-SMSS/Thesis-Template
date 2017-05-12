@@ -389,7 +389,7 @@
     \renewcommand{\bibliography}{%
       \clearpage
       \providecommand\phantomsection{} \phantomsection
-      \addcontentsline{toc}{chapter}{Bibliography}
+      \addcontentsline{toc}{chapter}{\bibname}
       \inappendixfalse
       \TEMPbibliography
     }
