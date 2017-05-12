@@ -318,7 +318,7 @@
 \renewcommand{\contentsname}{TABLE OF CONTENTS\vspace{-0.20in}}
 \renewcommand\listfigurename{LIST OF FIGURES\vspace{-0.20in}}
 \renewcommand\listtablename{LIST OF TABLES\vspace{-0.20in}}
-\renewcommand{\bibname}{BIBLIOGRAPHY\vspace{\baselineskip}}
+\renewcommand{\bibname}{BIBLIOGRAPHY}
 
 
 % Set the margins to UTPA specifications
@@ -546,10 +546,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% This was copied and modified from book.cls
 \renewenvironment{thebibliography}[1]
-     {\chapter*{\bibname}%
-       \singlespacing
+      {\doublespacing
+      \chapter*{\bibname}%
+      \singlespacing
       \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
-      \vspace{-65pt}  % makes space between title and text zero
+      \vspace{-42pt}  % makes space between title and text zero
       \vspace{2\baselineskip}  % add two blank line spaces
       \list{\@biblabel{\@arabic\c@enumiv}}%
            {\settowidth\labelwidth{\@biblabel{#1}}%
