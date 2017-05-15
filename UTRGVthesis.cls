@@ -485,6 +485,8 @@
 \renewcommand\chapter{%
   \addtocounter{tablenum}{\value{table}}
   \addtocounter{figurenum}{\value{figure}}
+  \setcounter{figure}{0}
+  \setcounter{table}{0}
   \if@openright\cleardoublepage\else\clearpage\fi
   \thispagestyle{fancy}%
   \global\@topnum\z@
