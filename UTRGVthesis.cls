@@ -387,10 +387,13 @@
  %Redefine the Bibliography to deal with a bookmarking issues
     \let\TEMPbibliography\bibliography
     \renewcommand{\bibliography}{%
+      \let\TEMPvspace\vspace
+      \renewcommand{\vspace}[1]{\relax}
       \clearpage
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{\bibname}
       \inappendixfalse
+      \let\vspace\TEMPvspace
       \TEMPbibliography
     }
 
