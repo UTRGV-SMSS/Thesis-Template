@@ -667,5 +667,9 @@
     \SetBgOpacity{1.0}% Select opacity
     \SetBgAngle{0.0}% Select roation of logo
     \SetBgScale{1.0}% Select scale factor of logo
-    \SetBgContents{\marginguides}% Set tikz picture
+    \SetBgContents{%
+      \hhbar{156pt}{1cm}%
+      \hhbar{200pt}{1cm}%
+      \marginguides%
+    }%
 }
