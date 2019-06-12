@@ -29,6 +29,14 @@
 % Uncomment the line below to check if text is aligned to margins
 %\margins
 
+% To change body font from Times Roman to Times New Roman, compile with XeLaTeX
+% This assumes you have Times New Roman font installed in your machine
+% WARNING! This will NOT change the font in Math Environments
+\usepackage{ifxetex}
+\ifxetex
+   \usepackage{fontspec}
+   \setmainfont{Times New Roman}
+\fi
 
 % this sets the name of the bibliography
 % add \vspace{1cm} here to adjust vertical spacing after bibliography title
