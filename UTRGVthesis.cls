@@ -26,40 +26,40 @@
 % Declare some variables to hold the text fields for the preliminary pages
 
     \newcommand{\Title}[1]{
-      \gdef\UTPAField@Title{#1}
-      \gdef\UTPAField@UppercaseTitle{\uppercase{#1}}
-      \def\UTPAField@UlineTitle{%
+      \gdef\UTRGVField@Title{#1}
+      \gdef\UTRGVField@UppercaseTitle{\uppercase{#1}}
+      \def\UTRGVField@UlineTitle{%
         \def\\{\relax}%
-        \protected@edef\tmp{\UTPAField@Title}%
+        \protected@edef\tmp{\UTRGVField@Title}%
         \expandafter\uline\expandafter{\tmp}%
       }
     }
-    \newcommand{\AuthorLastFirst}[1]{\gdef\UTPAField@AuthorLastFirst{#1}}
+    \newcommand{\AuthorLastFirst}[1]{\gdef\UTRGVField@AuthorLastFirst{#1}}
     \newcommand{\Author}[1]{
-      \gdef\UTPAField@Author{#1}
-      \gdef\UTPAField@UppercaseAuthor{\uppercase{#1}}
+      \gdef\UTRGVField@Author{#1}
+      \gdef\UTRGVField@UppercaseAuthor{\uppercase{#1}}
     }
-    \newcommand{\docname}[1]{\gdef\UTPAField@DocName{#1}}
+    \newcommand{\docname}[1]{\gdef\UTRGVField@DocName{#1}}
     \newcommand{\degree}[1]{
-      \gdef\UTPAField@Degree{#1}
-      \gdef\UTPAField@UppercaseDegree{\uppercase{#1}}
+      \gdef\UTRGVField@Degree{#1}
+      \gdef\UTRGVField@UppercaseDegree{\uppercase{#1}}
     }
-    \newcommand{\degreeabbrev}[1]{\gdef\UTPAField@DegreeAbbrev{#1}}
-    \newcommand{\Advisor}[1]{\gdef\UTPAField@Advisor{#1}}
-    \newcommand{\AdvisorTitle}[1]{\gdef\UTPAField@AdvisorTitle{#1}}
-    \newcommand{\MemberA}[1]{\gdef\UTPAField@MemberA{#1}}
-    \newcommand{\MemberATitle}[1]{\gdef\UTPAField@MemberATitle{#1}}
-    \newcommand{\MemberB}[1]{\gdef\UTPAField@MemberB{#1}}
-    \newcommand{\MemberC}[1]{\gdef\UTPAField@MemberC{#1}}
-    \newcommand{\MemberD}[1]{\gdef\UTPAField@MemberD{#1}}
-    \newcommand{\MemberE}[1]{\gdef\UTPAField@MemberE{#1}}
-    \newcommand{\Month}[1]{\gdef\UTPAField@Month{#1}}
-    \newcommand{\Year}[1]{\gdef\UTPAField@Year{#1}}
-    \newcommand{\Abstract}[1]{\gdef\UTPAField@Abstract{#1}}
-    \newcommand{\Dedication}[1]{\gdef\UTPAField@Dedication{#1}}
-    \newcommand{\Acknowledgments}[1]{\gdef\UTPAField@Acknowledgments{#1}}
-    \newcommand{\BiographicalSketch}[1]{\gdef\UTPAField@BiographicalSketch{#1}}
-    \newcommand{\Major}[1]{\gdef\UTPAField@Major{#1}}
+    \newcommand{\degreeabbrev}[1]{\gdef\UTRGVField@DegreeAbbrev{#1}}
+    \newcommand{\Advisor}[1]{\gdef\UTRGVField@Advisor{#1}}
+    \newcommand{\AdvisorTitle}[1]{\gdef\UTRGVField@AdvisorTitle{#1}}
+    \newcommand{\MemberA}[1]{\gdef\UTRGVField@MemberA{#1}}
+    \newcommand{\MemberATitle}[1]{\gdef\UTRGVField@MemberATitle{#1}}
+    \newcommand{\MemberB}[1]{\gdef\UTRGVField@MemberB{#1}}
+    \newcommand{\MemberC}[1]{\gdef\UTRGVField@MemberC{#1}}
+    \newcommand{\MemberD}[1]{\gdef\UTRGVField@MemberD{#1}}
+    \newcommand{\MemberE}[1]{\gdef\UTRGVField@MemberE{#1}}
+    \newcommand{\Month}[1]{\gdef\UTRGVField@Month{#1}}
+    \newcommand{\Year}[1]{\gdef\UTRGVField@Year{#1}}
+    \newcommand{\Abstract}[1]{\gdef\UTRGVField@Abstract{#1}}
+    \newcommand{\Dedication}[1]{\gdef\UTRGVField@Dedication{#1}}
+    \newcommand{\Acknowledgments}[1]{\gdef\UTRGVField@Acknowledgments{#1}}
+    \newcommand{\BiographicalSketch}[1]{\gdef\UTRGVField@BiographicalSketch{#1}}
+    \newcommand{\Major}[1]{\gdef\UTRGVField@Major{#1}}
 
 % Initialize the variables to their default values
 
@@ -87,29 +87,29 @@
 
 % Define the preliminary page layouts using the variables
 
-    \newcommand{\utpatitlepage}{%
+    \newcommand{\utrgvtitlepage}{%
         \newgeometry{top=2in, bottom=1in, left=1in, right=1in}
         \thispagestyle{empty}
         {\centering
           \doublespacing
-        \UTPAField@UppercaseTitle\par
+        \UTRGVField@UppercaseTitle\par
         \singlespacing
         \vfill  % provides equal spacing
-        A \UTPAField@DocName \\
+        A \UTRGVField@DocName \\
         \vspace{\baselineskip}
         by \\
         \vspace{\baselineskip}
-        \UTPAField@UppercaseAuthor\\
+        \UTRGVField@UppercaseAuthor\\
         \vfill  % provides equal spacing
         Submitted to the Graduate College of\\
         The University of Texas Rio Grande Valley\\
         In partial fulfillment of the requirements for the degree of\\
         \vspace{\baselineskip}
-        \UTPAField@UppercaseDegree\\
+        \UTRGVField@UppercaseDegree\\
         \vspace{7\baselineskip}  % skip 7 lines
-        \UTPAField@Month~\UTPAField@Year\\
+        \UTRGVField@Month~\UTRGVField@Year\\
         \vspace{4\baselineskip}  % skip 4 lines
-        Major Subject: \UTPAField@Major
+        Major Subject: \UTRGVField@Major
         \par}
       \restoregeometry
         \insertblankpage
@@ -122,39 +122,39 @@
         \singlespacing
         {\centering
         \doublespacing
-            {\UTPAField@UppercaseTitle}\par
+            {\UTRGVField@UppercaseTitle}\par
         \singlespacing
         \vspace{\baselineskip}
-        A \UTPAField@DocName \\
+        A \UTRGVField@DocName \\
         by \\
-        \UTPAField@UppercaseAuthor\\
+        \UTRGVField@UppercaseAuthor\\
         \vfill
         \uppercase{Committee Members} \\
         \vfill
-        \UTPAField@Advisor\\
-        \UTPAField@AdvisorTitle\\
+        \UTRGVField@Advisor\\
+        \UTRGVField@AdvisorTitle\\
         \vfill
-        \if \UTPAField@MemberA \relax \relax \else \mbox{\UTPAField@MemberA}\\
-                \UTPAField@MemberATitle \\
+        \if \UTRGVField@MemberA \relax \relax \else \mbox{\UTRGVField@MemberA}\\
+                \UTRGVField@MemberATitle \\
                 \vfill
         \fi
-        \if \UTPAField@MemberB \relax \relax \else \mbox{\UTPAField@MemberB}\\
+        \if \UTRGVField@MemberB \relax \relax \else \mbox{\UTRGVField@MemberB}\\
                 Committee Member\\
                 \vfill
         \fi
-        \if \UTPAField@MemberC \relax \relax \else \mbox{\UTPAField@MemberC}\\
+        \if \UTRGVField@MemberC \relax \relax \else \mbox{\UTRGVField@MemberC}\\
                 Committee Member\\
                 \vfill
         \fi
-        \if \UTPAField@MemberD \relax \relax \else \mbox{\UTPAField@MemberD}\\
+        \if \UTRGVField@MemberD \relax \relax \else \mbox{\UTRGVField@MemberD}\\
                 Committee Member\\
                 \vfill
         \fi
-        \if \UTPAField@MemberE \relax \relax \else \mbox{\UTPAField@MemberE}\\
+        \if \UTRGVField@MemberE \relax \relax \else \mbox{\UTRGVField@MemberE}\\
                 Committee Member\\
                 \vfill
         \fi
-        \mbox{\UTPAField@Month~\UTPAField@Year} \\
+        \mbox{\UTRGVField@Month~\UTRGVField@Year} \\
         \vspace{5\baselineskip}  % skip 5 lines to line up with previous page
         \par
       }
@@ -169,7 +169,7 @@
         {\centering%
         \vfill
         \doublespacing
-        Copyright~\UTPAField@Year~\UTPAField@Author \\
+        Copyright~\UTRGVField@Year~\UTRGVField@Author \\
         All Rights Reserved\\
         \vspace{10pt}  % moves up text to center
         \vfill
@@ -194,10 +194,10 @@
         \doublespacing
         {\setlength{\parindent}{0.5in}
           \noindent
-          \UTPAField@AuthorLastFirst,
-          \UTPAField@UlineTitle.
-          \UTPAField@Degree~\UTPAField@DegreeAbbrev,
-          \UTPAField@Month,~\UTPAField@Year,
+          \UTRGVField@AuthorLastFirst,
+          \UTRGVField@UlineTitle.
+          \UTRGVField@Degree~\UTRGVField@DegreeAbbrev,
+          \UTRGVField@Month,~\UTRGVField@Year,
           \pageref{LastPage}~pp.,
           \ifnum \totvalue{tablenum}=0
              \relax \relax
@@ -214,7 +214,7 @@
           \total{citesnum}~references,
           \total{bibnum}~titles.
 
-        \UTPAField@Abstract\par
+        \UTRGVField@Abstract\par
       }
 
         \vfill
@@ -225,7 +225,7 @@
 
 
     \newcommand{\dedicationpage}{%
-      \if \UTPAField@Dedication
+      \if \UTRGVField@Dedication
        \relax
       \else
         \newgeometry{top=2in, bottom=1in, left=1in, right=1in}
@@ -238,7 +238,7 @@
         \addcontentsline{toc}{chapter}{Dedication}
         {\setlength{\parindent}{0.5in}
           \doublespacing
-        \UTPAField@Dedication
+        \UTRGVField@Dedication
       }
         \restoregeometry
         \insertblankpage
@@ -252,7 +252,7 @@
         \addcontentsline{toc}{chapter}{Biographical Sketch}
           \doublespacing
         {\setlength{\parindent}{0.5in}
-        \UTPAField@BiographicalSketch
+        \UTRGVField@BiographicalSketch
       }
 
         \par\renewcommand{\baselinestretch}{1} \small\normalsize%
@@ -260,7 +260,7 @@
         }
 
     \newcommand{\acknowledgmentspage}{%
-      \if \UTPAField@Acknowledgments
+      \if \UTRGVField@Acknowledgments
        \relax
       \else
         \newgeometry{top=2in, bottom=1in, left=1in, right=1in}
@@ -273,7 +273,7 @@
          \addcontentsline{toc}{chapter}{Acknowledgments}
         {\setlength{\parindent}{0.5in}
           \doublespacing
-          \UTPAField@Acknowledgments
+          \UTRGVField@Acknowledgments
       }
         \restoregeometry
         \insertblankpage
@@ -321,7 +321,7 @@
 \renewcommand{\bibname}{BIBLIOGRAPHY}
 
 
-% Set the margins to UTPA specifications
+% Set the margins to UTRGV specifications
 
 \geometry{top=1in, bottom=1in, left=1in, right=1in}
    \setlength{\parindent}{0.5in}
@@ -401,7 +401,7 @@
 % Define the macro for making preliminary pages
     \newcommand{\makepreliminarypages}{%
       % We insert the pages heres and adjust spacing and geometry
-        \utpatitlepage
+        \utrgvtitlepage
         \committeepage
         \copyrightpage
         \abstractpage
