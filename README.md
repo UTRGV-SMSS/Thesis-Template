@@ -47,6 +47,24 @@ on equations and figures.
 To have the figures show and the red labels disappear, change the `\documentclass` options from `draft` to
 `final`.
 
+To compile for a PhD dissertation, you can change the `\documentclass` options from `masters` to `phd`.  Alternatively, you can use the following code in your `main.tex` file.
+
+```latex
+\degree{Doctor of Philosophy}
+\degreeabbrev{(PhD)}
+\docname{Dissertation}
+```
+
+
+
+To compile for a  Master of Arts thesis use the following code in `main.tex`
+
+```latex
+\degree{Master of Arts}
+\degreeabbrev{(MA)}
+\docname{Thesis}
+``` 
+
 
 ## Authors
 The author of this template is Guillermo Garza.
