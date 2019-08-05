@@ -21,6 +21,7 @@
 \RequirePackage{indentfirst}  % for indention of first paragraph
 \RequirePackage{graphicx} % Allow the inclusion of graphics
 \RequirePackage{setspace} % Allow double spacing with the \doublespacing
+\RequirePackage{calc}
 
 
 % Declare some variables to hold the text fields for the preliminary pages
@@ -83,6 +84,12 @@
         \addtocounter{page}{-1}
           \newpage
         }
+
+
+% Use to keep track of many pages in TOC, LOT, TOC, abstract, dedication
+\newcounter{pagebegin}
+\newcounter{pagedifference}
+
 
 
 % Define the preliminary page layouts using the variables
@@ -313,7 +320,7 @@
     \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
     \ProcessOptions
     \relax
-    \LoadClass[letterpaper,12pt, oneside]{book}
+    \LoadClass[letterpaper,12pt]{book}
 
 \renewcommand{\contentsname}{TABLE OF CONTENTS\vspace{-0.20in}}
 \renewcommand\listfigurename{LIST OF FIGURES\vspace{-0.20in}}
@@ -337,11 +344,11 @@
     %\renewcommand{\textfraction}{0.07}
 
 
-
 % Redefine the Table of Contents to deal with some blank page
 % and bookmarking issues relating to ETD submission
     \let\TEMPtableofcontents\tableofcontents
     \renewcommand{\tableofcontents}{%
+      \setcounter{pagebegin}{\value{page}} %get value of first page in TOC
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{Table of Contents}
       \singlespacing
@@ -351,7 +358,12 @@
       \doublespacing
         \thispagestyle{fancy}
         \restoregeometry
-        \insertblankpage
+
+      % keep track of pages in TOC
+      \setcounter{pagedifference}{\value{pagebegin} - \value{page}}
+      \ifodd \value{pagedifference}
+        \insertblankpage % insert blank page only if odd number of pages
+        \fi
     }
 
  %Redefine the List of Figures to deal with some blank page
@@ -366,7 +378,7 @@
       \doublespacing
         \thispagestyle{fancy}
         \restoregeometry
-        \insertblankpage
+          \insertblankpage
     }
 
  %Redefine the List of Tables to deal with some blank page
