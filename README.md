@@ -37,32 +37,46 @@ Here is a link on how to split your thesis up into several files:
 ## Common Issues
 
 
-When compiling with LaTeX (or pdfLaTeX) your paper will be typeset with a font that is almost
+1. **Font is Not Times New Roman**:  When compiling with LaTeX (or pdfLaTeX) your paper will be typeset with a font that is almost
 identical to Times New Roman but is not actually named that.  To typeset your
 paper with Times New Roman, change the compiler that your editor uses from LaTeX (or pdfLaTeX) to XeLaTeX.  
-
-
-When compiling in draft mode, figures do not show and you will also see red labels
+2. **Figures Do Not Show Up**: When compiling in draft mode, figures do not show and you will also see red labels
 on equations and figures.
 To have the figures show and the red labels disappear, change the `\documentclass` options from `draft` to
 `final`.
-
-To compile for a PhD dissertation, you can change the `\documentclass` options from `masters` to `phd`.  Alternatively, you can use the following code in your `main.tex` file.
-
+3. **Compiling for PhD dissertation**: To compile for a PhD dissertation, you can change the `\documentclass` options from `masters` to `phd`.  Alternatively, you can use the following code in your `main.tex` file.
 ```latex
 \degree{Doctor of Philosophy}
 \degreeabbrev{(PhD)}
 \docname{Dissertation}
 ```
-
-
-
+4. **Compiling for a Master of Arts Thesis**:
 To compile for a  Master of Arts thesis use the following code in `main.tex`
 
 ```latex
 \degree{Master of Arts}
 \degreeabbrev{(MA)}
 \docname{Thesis}
+``` 
+5. **Text Needs to be Aligned Left instead of Justified**: Sometimes a reviewer
+   will ask that the text of your thesis be Aligned Left (which is the default
+in Microsoft Word) instead of Justified (which is the default in LaTeX).  To
+switch to Aligned Left, uncomment the line with `\usepackage[document]{ragged2e}` in `main.tex` to
+activate Aligned Left.
+6. **Bibliography Requires Hanging Indentation**:  Sometimes a reviewer will ask
+   that the entries of your Bibliography have hanging indentation after the
+first line. To enable
+this, add the lines below to the file `main.tex`  before the beginning of the
+bibliography code. You can adjust the size of the indentation by changing `2em`
+to a more suitable value.
+```latex
+\makeatletter
+\def\bibhanging{2em}
+\let\old@biblabel\@biblabel
+\def\@biblabel#1{\old@biblabel{#1}\kern\bibhanging}
+\let\old@bibitem\bibitem
+\def\bibitem#1{\old@bibitem{#1}\leavevmode\kern-\bibhanging}
+\makeatother
 ``` 
 
 
