@@ -240,6 +240,7 @@
       \if \UTRGVField@Dedication
        \relax
       \else
+        \setcounter{pagebegin}{\value{page}} %get value of first page
         \newgeometry{top=2in, bottom=1in, left=1in, right=1in}
         \thispagestyle{fancy}
         {\centering
@@ -253,7 +254,11 @@
         \UTRGVField@Dedication
       }
         \restoregeometry
-        \insertblankpage
+        % keep track of pages
+        \setcounter{pagedifference}{\value{pagebegin} - \value{page}}
+        \ifodd \value{pagedifference}
+          \insertblankpage % insert blank page only if odd number of pages
+        \fi
       \fi
         }
 
