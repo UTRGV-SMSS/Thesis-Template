@@ -54,6 +54,9 @@
     \newcommand{\MemberC}[1]{\gdef\UTRGVField@MemberC{#1}}
     \newcommand{\MemberD}[1]{\gdef\UTRGVField@MemberD{#1}}
     \newcommand{\MemberE}[1]{\gdef\UTRGVField@MemberE{#1}}
+    \newcommand{\MemberF}[1]{\gdef\UTRGVField@MemberF{#1}}
+    \newcommand{\MemberG}[1]{\gdef\UTRGVField@MemberG{#1}}
+    \newcommand{\MemberH}[1]{\gdef\UTRGVField@MemberH{#1}}
     \newcommand{\Month}[1]{\gdef\UTRGVField@Month{#1}}
     \newcommand{\Year}[1]{\gdef\UTRGVField@Year{#1}}
     \newcommand{\Abstract}[1]{\gdef\UTRGVField@Abstract{#1}}
@@ -75,6 +78,9 @@
     \MemberC{}
     \MemberD{}
     \MemberE{}
+    \MemberF{}
+    \MemberG{}
+    \MemberH{}
 
 % define a command to insert a blank page
         \newcommand{\insertblankpage}{%
@@ -158,6 +164,18 @@
                 \vfill
         \fi
         \if \UTRGVField@MemberE \relax \relax \else \mbox{\UTRGVField@MemberE}\\
+                Committee Member\\
+                \vfill
+        \fi
+        \if \UTRGVField@MemberF \relax \relax \else \mbox{\UTRGVField@MemberF}\\
+                Committee Member\\
+                \vfill
+        \fi
+        \if \UTRGVField@MemberG \relax \relax \else \mbox{\UTRGVField@MemberG}\\
+                Committee Member\\
+                \vfill
+        \fi
+        \if \UTRGVField@MemberH \relax \relax \else \mbox{\UTRGVField@MemberH}\\
                 Committee Member\\
                 \vfill
         \fi
