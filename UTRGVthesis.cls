@@ -406,6 +406,7 @@
  %and bookmarking issues
     \let\TEMPlistoftables\listoftables
     \renewcommand{\listoftables}{%
+      \setcounter{pagebegin}{\value{page}} %get value of first page in LOT
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{List of Tables}
         \newgeometry{top=1.125in, bottom=1in, left=1in, right=1in}
@@ -414,7 +415,12 @@
       \doublespacing
         \thispagestyle{fancy}
         \restoregeometry
-        \insertblankpage
+
+      % keep track of pages
+      \setcounter{pagedifference}{\value{pagebegin} - \value{page}}
+      \ifodd \value{pagedifference}
+        \insertblankpage % insert blank page only if odd number of pages
+      \fi
     }
 
  %Redefine the Bibliography to deal with a bookmarking issues
