@@ -320,7 +320,7 @@
     \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
     \ProcessOptions
     \relax
-    \LoadClass[letterpaper,12pt]{book}
+    \LoadClass[letterpaper,12pt,oneside]{book}
 
 \renewcommand{\contentsname}{TABLE OF CONTENTS\vspace{-0.20in}}
 \renewcommand\listfigurename{LIST OF FIGURES\vspace{-0.20in}}
