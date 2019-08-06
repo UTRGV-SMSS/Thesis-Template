@@ -385,6 +385,7 @@
  %and bookmarking issues
     \let\TEMPlistoffigures\listoffigures
     \renewcommand{\listoffigures}{%
+      \setcounter{pagebegin}{\value{page}} %get value of first page in LOF
       \providecommand\phantomsection{} \phantomsection
       \addcontentsline{toc}{chapter}{List of Figures}
       \singlespacing
@@ -393,7 +394,12 @@
       \doublespacing
         \thispagestyle{fancy}
         \restoregeometry
-          \insertblankpage
+
+      % keep track of pages
+      \setcounter{pagedifference}{\value{pagebegin} - \value{page}}
+      \ifodd \value{pagedifference}
+        \insertblankpage % insert blank page only if odd number of pages
+      \fi
     }
 
  %Redefine the List of Tables to deal with some blank page
