@@ -237,8 +237,7 @@
             {\ifnum\totvalue{figurenum}=1 \total{figurenum}~figure,\else
               \total{figurenum}~figures,\fi}
           \fi
-          \total{citesnum}~references,
-          \total{bibnum}~titles.
+          \total{bibnum}~references.
 
         \UTRGVField@Abstract\par
       }
