@@ -84,6 +84,15 @@ to a more suitable value.
 \newtheorem{prop}{Proposition}
 \renewcommand{\theprop}{\thechapter{}.\arabic{prop}}
 ```
+8. **Reviewer Asks to Modify Spacing**: Sometimes a reviewer will ask you modify spacing in some part of the document.  For example, if a reviewer asks you decrease the space between the lines in the copyright page, modify the file `UTRGVthesis.cls` by changing the line
+```latex
+Copyright~\UTRGVField@Year~\UTRGVField@Author \\
+```
+to something similar to
+```latex
+Copyright~\UTRGVField@Year~\UTRGVField@Author \\[-1mm]
+```
+where you will need to judge the length needed.  Unfortunately, the changes asked by reviewers are unpredictable.  Otherwise, this template would be modified to accommodate them.
 
 
 ## Authors
