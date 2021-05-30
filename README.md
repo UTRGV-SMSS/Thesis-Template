@@ -78,6 +78,12 @@ to a more suitable value.
 \def\bibitem#1{\old@bibitem{#1}\leavevmode\kern-\bibhanging}
 \makeatother
 ``` 
+7. **Want to Use Special Environments for Thereoms**: If you want to use special environments for theroems, propositions, proofs, and other similar environments, add code similar to below to the file `main.tex`. See the documentation for the  `amsthm` package for further customization.
+```latex
+\usepackage{amsthm}
+\newtheorem{prop}{Proposition}
+\renewcommand{\theprop}{\thechapter{}.\arabic{prop}}
+```
 
 
 ## Authors
