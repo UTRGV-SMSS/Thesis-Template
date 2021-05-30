@@ -1,5 +1,7 @@
 # UTRGV Thesis Template
 
+![Compiles Successfully](https://github.com/UTRGV-SMSS/Thesis-Template/actions/workflows/compile.yml/badge.svg)
+
 This is a LaTeX thesis template that attempts to conform to the guidelines
 published by UTRGV's Graduate School office.
 
