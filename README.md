@@ -1,7 +1,6 @@
 # UTRGV Thesis Template
 
-[![Build LaTeX document](https://github.com/UTRGV-SMSS/Thesis-Template/actions/workflows/compile.yml/badge.svg)](https://github.com/UTRGV-SMSS/Thesis-Template/actions/workflows/compile.yml)
-[![Lint files with chktex](https://github.com/UTRGV-SMSS/Thesis-Template/actions/workflows/lint.yml/badge.svg)](https://github.com/UTRGV-SMSS/Thesis-Template/actions/workflows/lint.yml)
+[![Lint and Build LaTeX document](https://github.com/UTRGV-SMSS/Thesis-Template/actions/workflows/compile.yml/badge.svg)](https://github.com/UTRGV-SMSS/Thesis-Template/actions/workflows/compile.yml)
 
 This is a LaTeX thesis template that attempts to conform to the guidelines
 published by UTRGV's Graduate School office.
