@@ -157,7 +157,7 @@
 #  Logical      "An example", he said, "would be great".
 #
 
-QuoteStyle = Logical
+QuoteStyle = Traditional
 
 #####################################################################
 #
@@ -175,7 +175,7 @@ TabSize = 8
 
 CmdLine
 {
-
+-n12
 }
 
 #####################################################################
@@ -332,6 +332,9 @@ OutFormat
 
 Silent
 {
+    \ifxetex \makepreliminarypages \mainmatter  \doublespacing
+    \biographypage 
+
     \rm \em \bf \it \sl \sf \sc \tt \selectfont
     \rmfamily \sffamily \ttfamily \mdseries \bfseries
     \slshape \scshape \relax
