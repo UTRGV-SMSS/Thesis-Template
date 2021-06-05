@@ -8,18 +8,13 @@ on: [push, workflow_dispatch]
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  lint_file:
+  lint_and_build_file:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
       - name: Lint with chktex
         uses: j2kun/chktex-action@1.0.3
-  build_latex:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Set up Git repository
-        uses: actions/checkout@v2
       - name: Compile LaTeX document
         uses: dante-ev/latex-action@latest
         with:
