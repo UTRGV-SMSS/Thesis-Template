@@ -46,6 +46,7 @@ paper with Times New Roman, change the compiler that your editor uses from LaTeX
 on equations and figures.
 To have the figures show and the red labels disappear, change the `\documentclass` options from `draft` to
 `final`.
+3. **Table of Contents is titled "Contents" instead of "TABLE OF CONTENTS” and need to change "Chapter I" to "CHAPTER I"**: This issue is most likely caused by the Babel package, which is probably not needed.  If so, remove the line with “\usepackage{babel}”
 3. **Compiling for PhD dissertation**: To compile for a PhD dissertation, you can change the `\documentclass` options from `masters` to `phd`.  Alternatively, you can use the following code in your `main.tex` file.
 ```latex
 \degree{Doctor of Philosophy}
