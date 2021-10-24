@@ -577,6 +577,8 @@
   {\centering%
   \vfill
   APPENDIX~\Alph{appendixtracker}
+  \addcontentsline{toc}{chapter}%
+     {APPENDIX~\Alph{chapter}}%
   \vspace{1.25\baselineskip}
   \vfill
   \par
@@ -592,8 +594,7 @@
                          \refstepcounter{chapter}%
                          \typeout{\@chapapp\space\thechapter.}%
                          \ifinappendix  %% omits appendix title from TOC
-                           \addcontentsline{toc}{chapter}%
-                             {APPENDIX~\Alph{chapter}}%
+                            \relax
                          \else
                            \addcontentsline{toc}{chapter}%
                              {CHAPTER~\Roman{chapter}.~#1}%
