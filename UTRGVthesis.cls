@@ -260,10 +260,12 @@
        \relax
       \else
         \setcounter{pagebegin}{\value{page}} %get value of first page
-        \newgeometry{top=2in, bottom=1in, left=1in, right=1in}
+        \newgeometry{top=1in, bottom=1in, left=1in, right=1in}
         \thispagestyle{fancy}
         {\centering
+        \rule{0pt}{1.15in} % spacer to bring down the Abstract text
         DEDICATION
+        \rule{0pt}{1.15in} % spacer to bring down the Abstract text
         \par}
       \vspace{\baselineskip}
          \small\normalsize%
