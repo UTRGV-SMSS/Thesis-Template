@@ -5,8 +5,10 @@
 This is a LaTeX thesis template that attempts to conform to the guidelines
 published by UTRGV's Graduate School office.
 
-Please report any issues to
-[https://github.com/UTRGV-SMSS/Thesis-Template/issues](https://github.com/UTRGV-SMSS/Thesis-Template/issues)
+If you have a question, please submit your question as an issue here:
+[https://github.com/UTRGV-SMSS/Thesis-Template/issues](https://github.com/UTRGV-SMSS/Thesis-Template/issues). 
+You should also read through the issues listed there to see if they match the question you have.
+
 
 ## Getting Started
 
