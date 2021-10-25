@@ -32,7 +32,7 @@ layout of your document.
 
 The following are two video series on getting started with LaTeX: from [Vincent Knight](https://www.youtube.com/playlist?list=PLnC5h3PY-znyDQKn3knfXfekZLgWyL7QW)
 and from
-[Grand Valley State](www.youtube.com/playlist?list=PLF975D9D3C9B50FF7)
+[Grand Valley State](https://www.youtube.com/playlist?list=PLF975D9D3C9B50FF7)
 
 Here is a link on how to split your thesis up into several files:
 [https://web.science.mq.edu.au/~rdale/resources/writingnotes/latexstruct.html](https://web.science.mq.edu.au/~rdale/resources/writingnotes/latexstruct.html)
