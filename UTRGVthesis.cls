@@ -535,6 +535,7 @@
 \let\TEMPappendix\appendix
 \renewcommand{\appendix}{%
   \renewcommand\thefigure{\Alph{chapter}.\arabic{figure}}
+  \renewcommand\thetable{\Alph{chapter}.\arabic{table}}
   \inappendixtrue
   \setcounter{chapter}{0}%
   \setcounter{section}{0}%
