@@ -239,7 +239,12 @@
             {\ifnum\totvalue{figurenum}=1 \total{figurenum}~figure,\else
               \total{figurenum}~figures,\fi}
           \fi
-          \total{bibnum}~references.
+          \ifnum \totvalue{appendixtracker}=0
+              \total{bibnum}~references.
+          \else
+            {\ifnum\totvalue{appendixtracker}=1 \total{bibnum}~references.\else
+              \total{bibnum}~references, \total{appendixtracker}~appendices.\fi}
+          \fi
 
         \UTRGVField@Abstract\par
       }
@@ -567,7 +572,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  creates blank page with the APPENDIX A before appendix
-\newcounter{appendixtracker}
+\RequirePackage{totcount} % for citation and reference counts
+\newtotcounter{appendixtracker} % counter for counting titles in bibliography
 
 \newcommand\preappendix{
   \stepcounter{appendixtracker} % uses correct chapter counter before it is set
@@ -680,7 +686,6 @@
 
 % load more packages
 \RequirePackage[normalem]{ulem} % for underlining command \uline
-\RequirePackage{totcount} % for citation and reference counts
 \RequirePackage{lastpage} % to get the number of pages
 
 \newtotcounter{tablenum}  % counter for counting tables
