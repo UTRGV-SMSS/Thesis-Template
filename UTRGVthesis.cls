@@ -570,7 +570,6 @@
 \newcounter{appendixtracker}
 
 \newcommand\preappendix{
-  \setcounter{appendixtracker}{\value{chapter}} % captures chapter counter
   \stepcounter{appendixtracker} % uses correct chapter counter before it is set
   \newpage
   \thispagestyle{fancy}%
@@ -579,7 +578,7 @@
   \vfill
   APPENDIX~\Alph{appendixtracker}
   \addcontentsline{toc}{chapter}%
-     {APPENDIX~\Alph{chapter}}%
+     {APPENDIX~\Alph{appendixtracker}}%
   \vspace{1.25\baselineskip}
   \vfill
   \par
