@@ -140,16 +140,16 @@
         \doublespacing
             {\UTRGVField@UppercaseTitle}\par
         \singlespacing
-        \vspace{\baselineskip}
         A \UTRGVField@DocName \\
         by \\
         \UTRGVField@UppercaseAuthor\\
         \vfill
         \uppercase{Committee Members} \\
         \vfill
-        \UTRGVField@Advisor\\
-        \UTRGVField@AdvisorTitle\\
-        \vfill
+        \if \UTRGVField@Advisor \relax \relax \else \mbox{\UTRGVField@Advisor}\\
+                \UTRGVField@AdvisorTitle \\
+                \vfill
+        \fi
         \if \UTRGVField@MemberA \relax \relax \else \mbox{\UTRGVField@MemberA}\\
                 \UTRGVField@MemberATitle \\
                 \vfill
