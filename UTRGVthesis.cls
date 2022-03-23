@@ -114,15 +114,18 @@
         \vspace{\baselineskip}
         \UTRGVField@UppercaseAuthor\\
         \vfill  % provides equal spacing
-        Submitted to the Graduate College of\\
-        The University of Texas Rio Grande Valley\\
-        In partial fulfillment of the requirements for the degree of\\
-        \vspace{\baselineskip}
+        {\doublespacing
+        Submitted in Partial Fulfillment of the\\
+        Requirements for the Degree of\\
         \UTRGVField@UppercaseDegree\\
-        \vspace{7\baselineskip}  % skip 7 lines
-        \UTRGVField@Month~\UTRGVField@Year\\
+        }
         \vspace{4\baselineskip}  % skip 4 lines
-        Major Subject: \UTRGVField@Major
+        Major Subject: \UTRGVField@Major\\
+        \vspace{7\baselineskip}  % skip 7 lines
+        {\doublespacing
+        The University of Texas Rio Grande Valley\\
+        \UTRGVField@Month~\UTRGVField@Year\\
+        }
         \par}
       \restoregeometry
         \insertblankpage
