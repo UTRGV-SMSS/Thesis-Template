@@ -2,8 +2,9 @@
 
 [![Lint and Build LaTeX document](https://github.com/UTRGV-SMSS/Thesis-Template/actions/workflows/compile.yml/badge.svg)](https://github.com/UTRGV-SMSS/Thesis-Template/actions/workflows/compile.yml)
 
-This is a LaTeX thesis template that attempts to conform to the guidelines
-published by UTRGV's Graduate School office.
+This is a LaTeX thesis template that attempts to conform to the 
+[Thesis Guide](https://www.utrgv.edu/graduate/_files/documents/thesis-formatting-guide-september-2021.pdf)
+published by the UTRGV Graduate College.
 
 If you have a question, please submit your question as an issue here:
 [https://github.com/UTRGV-SMSS/Thesis-Template/issues](https://github.com/UTRGV-SMSS/Thesis-Template/issues). 
