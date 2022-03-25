@@ -99,6 +99,8 @@ Copyright~\UTRGVField@Year~\UTRGVField@Author \\[-1mm]
 ```
 where you will need to judge the length needed.  Unfortunately, the changes asked by reviewers are unpredictable.  Otherwise, this template would be modified to accommodate them.
 
+9. **Captions are aligned to the left**: The September 2021 revision of Thesis Guide states on page 15 that figures and tables should be left-aligned and not centered.  The `caption` package is loaded in the class file to align the captions to the left to match the alignment of figures and tables.
+
 
 ## Authors
 The author of this template is Guillermo Garza.
