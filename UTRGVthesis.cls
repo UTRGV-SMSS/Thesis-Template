@@ -745,3 +745,6 @@
       \marginguides%
     }%
 }
+
+\RequirePackage{caption}
+\captionsetup{slc=off}
