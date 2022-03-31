@@ -726,6 +726,23 @@
         \fill [fill=gray!20,line width=0pt] (0in,0in) rectangle (1in, 11in);
         \fill [fill=gray!30,line width=0pt] (0in,2in) rectangle (8.5in, 1in);
         \fill [fill=gray!30,line width=0pt] (0in,11in) rectangle (8.5in, 10in);
+
+        \foreach \y in {1,2,...,11}{
+          \draw [color=red, line width=1pt](0in, \y in - 0.5in) -- (1.0in, \y in-0.5in)
+              node[color=red, rotate=0, anchor=west] {};
+          \draw [color=red, line width=1pt](0in, \y in - 0.75in) -- (0.5in, \y in-0.75in)
+              node[color=red, rotate=0, anchor=west] {};
+          \draw [color=red, line width=1pt](0in, \y in - 0.25in) -- (0.5in, \y in-0.25in)
+              node[color=red, rotate=0, anchor=west] {};
+        }
+        \foreach \y in {1,2,...,10}{
+          \draw [color=red, line width=1pt](0in, \y in) -- (1.5in, \y in)
+              node[color=red, rotate=0, anchor=west] {~\y~in};
+        }
+        % \foreach \y in {1,2,...,60}{
+        %   \draw [color=blue, line width=0.5pt] (4.25in, \y*\baselineskip) -- (8.5in, \y*\baselineskip)
+        %       node[color=red, rotate=0, anchor=west] {\y};
+        % }
      \end{tikzpicture}%
    }
 
