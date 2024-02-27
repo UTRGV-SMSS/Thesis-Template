@@ -102,6 +102,17 @@ where you will need to judge the length needed.  Unfortunately, the changes aske
 
 9. **Captions are aligned to the left**: The September 2021 revision of Thesis Guide states on page 15 that figures and tables should be left-aligned and not centered.  The `caption` package is loaded in the class file to align the captions to the left to match the alignment of figures and tables.
 
+10. **List of Figures and List of Tables must only contain the first sentence of Figure/Table caption**: If your Figure(s) and/or Table(s) contain more than one sentences in its caption, only the first sentence must be included in the List of Figures and List of Tables. To do this, in your figure or table environment edit the \caption{} as follows.
+
+```\caption[<First sentence>]{Full caption.}``` 
+
+This will keep the Full caption in the Figure/Table but only add the first sentence to the LoF and LoT. 
+
+11. **Long Chapter names**: Splitting long chapter names across multiple lines using newline commands also splits them in the corresponding TOC entry. To fix this use, 
+
+```\chapter[<Chapter Name without newline characters>]{Chapter name with newline characters as needed}``` 
+
+This will ensure that the chapter name doesn't have any newline characters in the TOC but have them in the chapter title page as needed.
 
 ## Authors
 The author of this template is Guillermo Garza.
