@@ -217,7 +217,7 @@
         {\centering%
         \rule{0pt}{1.15in} % spacer to bring down the Abstract text
         ABSTRACT
-        \rule{0pt}{1.15in} % spacer to bring down the Abstract text
+        \rule{0pt}{1.15in} % spacer to bring down the   wehAbstract text
         \vspace{\baselineskip}
         \par
         }
@@ -246,7 +246,7 @@
               \total{bibnum}~references.
           \else
             {\ifnum\totvalue{appendixtracker}=1 \total{bibnum}~references.\else
-              \total{bibnum}~references, \total{appendixtracker}~appendices.\fi}
+              \total{bibnum}~references.\fi}
           \fi
 
         \UTRGVField@Abstract\par
@@ -294,8 +294,8 @@
 
     \newcommand{\biographypage}{%
       \inappendixfalse
-      \chapter*{BIOGRAPHICAL SKETCH}
-        \addcontentsline{toc}{chapter}{Biographical Sketch}
+      \chapter*{VITA}
+        \addcontentsline{toc}{chapter}{Vita}
           \doublespacing
         {\setlength{\parindent}{0.5in}
         \UTRGVField@BiographicalSketch
@@ -396,7 +396,7 @@
     \renewcommand{\tableofcontents}{%
       \setcounter{pagebegin}{\value{page}} %get value of first page in TOC
       \providecommand\phantomsection{} \phantomsection
-      \addcontentsline{toc}{chapter}{Table of Contents}
+      %\addcontentsline{toc}{chapter}{Table of Contents}
       \singlespacing
       % top margin should be 2inches
       \newgeometry{top=1.125in, bottom=1in, left=1in, right=1in}
@@ -586,8 +586,11 @@
   {\centering%
   \vfill
   APPENDIX~\Alph{appendixtracker}
-  \addcontentsline{toc}{chapter}%
-     {APPENDIX~\Alph{appendixtracker}}%
+  \ifnum\value{appendixtracker}=1
+  \addcontentsline{toc}{chapter}{APPENDICES}%
+\fi
+  % \addcontentsline{toc}{chapter}%
+  %    {APPENDIX~\Alph{appendixtracker}}%
   \vspace{1.25\baselineskip}
   \vfill
   \par
@@ -606,7 +609,7 @@
                             \relax
                          \else
                            \addcontentsline{toc}{chapter}%
-                             {CHAPTER~\Roman{chapter}.~#1}%
+                             {CHAPTER~\Roman{chapter}:~#1}%
                          \fi
                        \else
                          \addcontentsline{toc}{chapter}{#1}%
