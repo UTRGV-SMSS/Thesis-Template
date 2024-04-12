@@ -1,4 +1,4 @@
-# UTRGV Thesis Template
+# Unofficial UTRGV Thesis Template
 
 [![Lint and Build LaTeX document](https://github.com/UTRGV-SMSS/Thesis-Template/actions/workflows/compile.yml/badge.svg)](https://github.com/UTRGV-SMSS/Thesis-Template/actions/workflows/compile.yml)
 
