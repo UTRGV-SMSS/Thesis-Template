@@ -227,7 +227,7 @@
           \UTRGVField@AuthorLastFirst,
           \UTRGVField@UlineTitle.
           \UTRGVField@Degree~\UTRGVField@DegreeAbbrev,
-          \UTRGVField@Month,~\UTRGVField@Year,
+          \UTRGVField@Month~\UTRGVField@Year,
           \pageref{LastPage}~pp.,
           \ifnum \totvalue{tablenum}=0
              \relax \relax
