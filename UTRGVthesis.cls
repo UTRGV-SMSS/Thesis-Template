@@ -183,7 +183,6 @@
                 \vfill
         \fi
         \mbox{\UTRGVField@Month~\UTRGVField@Year} \\
-        \vspace{5\baselineskip}  % skip 5 lines to line up with previous page
         \par
       }
         \restoregeometry
